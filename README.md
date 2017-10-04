@@ -1,8 +1,8 @@
-S**MA**RT**IL**
+<center><h1>S**MA**RT**IL**</h1>
 
-Boite aux lettres connectées
+Boite aux lettres connectées</center>
 
-## **Groupe :**
+## <h3>**Groupe :**</h3>
 
 * ABDELKADER Ibrahim, [ibrahim.abdelkader@](mailto:ibrahim.abdelkader@esprit.tn)[etu.unice.fr](mailto:jonathan.boudab@etu.unice.fr), IAM
 
@@ -10,9 +10,9 @@ Boite aux lettres connectées
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
 
-### **Scénarios d’utilisation:**
+### <h3>**Scénarios d’utilisation:**</h3>
 
-Définition d’un utilisateur type du système : 
+**Définition d’un utilisateur type du système : **
 
 Bob est une personne lambda qui attend souvent pour son courrier. Il va régulièrement à sa boîte aux lettres mais il aimerait ne pas y aller pour rien. De ce fait, il aimerait pouvoir savoir si le facteur est passé ou non. De même Bob, étant souvent sur son lieu de travail aimerait pouvoir jeter un coup d’oeil au contenu de sa boîte aux lettres afin d'être informé plus précisément de son contenu. De plus comme Bob travaille beaucoup, il n’a pas vraiment le temps de se déplacer et d’aller à la poste, ainsi il souhaiterait pouvoir recevoir tous ses colis et lettres contre signature sans avoir à être présent. Enfin, il aimerait surtout pouvoir envoyer ses colis et ses lettres bien plus facilement que ce qui n’existe à l’heure actuelle; c’est à dire, les laisser dans sa boite aux lettres et que le facteur se charge de la transmission pour envoie.
 
@@ -20,13 +20,13 @@ Charles est une personne à mobilité réduite, il  du mal à se déplacer tous 
 
 Dominique est un responsable de la Poste. Il souhaite pouvoir optimiser les tournées de ses facteurs. En effet la démographie d’une ville est en constante évolution et il faut toujours adapter les parcours de chaque facteur pour optimiser le temps de travail.
 
-Un bon vers le futur ?
+**Un bon vers le futur ?**
 
 Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur d’humidité, de température et sera reliée à une API météo afin de prévenir ses utilisateurs que la météo capricieuse risque de détériorer le contenu de sa boite aux lettre.
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-**Équipement TIC :**
+<h3>**Équipement TIC :**</h3>
 
 **Capteurs et actionneurs**
 
