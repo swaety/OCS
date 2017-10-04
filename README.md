@@ -1,8 +1,10 @@
-<h1>S**MA**RT**IL**</h1>
+S**MA**RT**IL**
+==
 
 Boite aux lettres connectées
+-
 
-## <h3>**Groupe :**</h3>
+## **Groupe :**
 
 * ABDELKADER Ibrahim, [ibrahim.abdelkader@](mailto:ibrahim.abdelkader@esprit.tn)[etu.unice.fr](mailto:jonathan.boudab@etu.unice.fr), IAM
 
@@ -10,7 +12,7 @@ Boite aux lettres connectées
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
 
-### <h3>**Scénarios d’utilisation:**</h3>
+### **Scénarios d’utilisation:**
 
 **Définition d’un utilisateur type du système :**
 
@@ -26,7 +28,7 @@ Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-<h3>Équipement TIC :</h3>
+#### **Équipement TIC :**
 
 **Capteurs et actionneurs**
 
