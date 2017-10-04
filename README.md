@@ -12,7 +12,7 @@ Boite aux lettres connectées
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
 
-### **Scénarios d’utilisation:**
+## **Scénarios d’utilisation:**
 
 **Définition d’un utilisateur type du système :**
 
@@ -28,7 +28,7 @@ Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-#### **Équipement TIC :**
+## **Équipement TIC :**
 
 **Capteurs et actionneurs**
 
