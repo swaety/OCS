@@ -1,6 +1,6 @@
-<center><h1>S**MA**RT**IL**</h1>
+<h1>S**MA**RT**IL**</h1>
 
-Boite aux lettres connectées</center>
+Boite aux lettres connectées
 
 ## <h3>**Groupe :**</h3>
 
@@ -26,7 +26,7 @@ Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-<h3>**Équipement TIC :**</h3>
+<h3>Équipement TIC :</h3>
 
 **Capteurs et actionneurs**
 
