@@ -1,4 +1,4 @@
-<h1>S</h1>**<h1>MA</h1>**<h1>RT</h1>**<h1>IL</h1>**
+<h1>S**MA**RT**IL**</h1>
 
 Boite aux lettres connectées
 
