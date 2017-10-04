@@ -1,4 +1,4 @@
-<h1>S**MA**RT**IL**</h1>
+S**MA**RT**IL**
 
 Boite aux lettres connectées
 
@@ -12,7 +12,7 @@ Boite aux lettres connectées
 
 ### <h3>**Scénarios d’utilisation:**</h3>
 
-**Définition d’un utilisateur type du système : **
+**Définition d’un utilisateur type du système :**
 
 Bob est une personne lambda qui attend souvent pour son courrier. Il va régulièrement à sa boîte aux lettres mais il aimerait ne pas y aller pour rien. De ce fait, il aimerait pouvoir savoir si le facteur est passé ou non. De même Bob, étant souvent sur son lieu de travail aimerait pouvoir jeter un coup d’oeil au contenu de sa boîte aux lettres afin d'être informé plus précisément de son contenu. De plus comme Bob travaille beaucoup, il n’a pas vraiment le temps de se déplacer et d’aller à la poste, ainsi il souhaiterait pouvoir recevoir tous ses colis et lettres contre signature sans avoir à être présent. Enfin, il aimerait surtout pouvoir envoyer ses colis et ses lettres bien plus facilement que ce qui n’existe à l’heure actuelle; c’est à dire, les laisser dans sa boite aux lettres et que le facteur se charge de la transmission pour envoie.
 
