@@ -99,21 +99,6 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
     <td>Transcend 16GB microSDHC
 </td>
   </tr>
-  <tr>
-    <td>Ecran LCD RGB</td>
-    <td>--</td>
-    <td>11.9€</td>
-    <td>1</td>
-    <td>https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html</td>
-  </tr>
-  <tr>
-    <td>Barcode Reader/Scanner Module - CCD Camera</td>
-    <td>--</td>
-    <td>56€
-</td>
-    <td>1</td>
-    <td>https://thepihut.com/products/barcode-reader-scanner-module-ccd-camera</td>
-  </tr>
 </table>
 
 
