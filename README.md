@@ -76,14 +76,6 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
     <td>Raspberry Pi 3</td>
   </tr>
   <tr>
-    <td>Capteur Humidité , température ,et pression</td>
-    <td>--</td>
-    <td>6€</td>
-    <td>1</td>
-    <td>BME280
-</td>
-  </tr>
-  <tr>
     <td>GrovePi</td>
     <td>--</td>
     <td>27.6€</td>
