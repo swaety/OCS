@@ -111,13 +111,29 @@ En dernier lieu nous sommes partis sur un accéléromètre pour détecter une ac
 
 ## **Premier prototype:**
 
-![image alt text](/images/image_0.jpg)![image alt text](/images/image_1.jpg)
+![image alt text](/images/image_0.jpg)
+
+![image alt text](/images/image_1.jpg)
 
 ## **Maquette Solidworks:**
 
 ![image alt text](/images/image_2.png)
 
-![image alt text](/images/image_3.png)![image alt text](/images/image_4.png)
+Maquette complète et assemblée
 
-![image alt text](/images/image_5.png)![image alt text](/images/image_6.png)
+![image alt text](/images/image_3.png)
+
+Partie 1 de la maquette avec incorporation de la LED et du bouton
+
+![image alt text](/images/image_4.png)
+
+Partie 2 de la maquette avec incorporation du capteur infrarouge
+
+![image alt text](/images/image_5.png)
+
+Pièce permettant d’attacher toutes nos parties
+
+![image alt text](/images/image_6.png)
+
+Partie du capot
 
