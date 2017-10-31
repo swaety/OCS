@@ -94,3 +94,16 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 </table>
 
 
+## **Etudes des capteurs et actionneurs à utiliser:**
+
+Problème: détection de la réception du courrier. La quantité de courrier n’est pas intéressant à connaître, cependant nous voulons savoir quand une personne dépose quelque chose dans la boîte aux lettres.
+De ce fait nous sommes partis sur plusieurs hypothèses. Au début nous avons cherché à faire un système de balance pour détecter une différence de poids entre chaque pose de lettres grâce à un capteur de force ou un capteur de torsion. Les deux capteurs posent problème sur l'étalonnage des données: mesure pas assez précises pour détecter la pose d’une enveloppe sur notre dispositif. De plus pour les deux dispositifs il faut utiliser quatre capteurs au vue de la taille de notre plateau. Cela pose un gros problème de stabilisation.
+
+En deuxième lieu nous avons pensé à utiliser un potentiomètre. Le problème avec ce capteur est qu’il mesure 60 mm de long et donc son positionnement à la vertical est impossible car nous n’avons pas la hauteur nécessaire.
+De ce fait nous voulions le positionner à l’horizontal au fond de notre boitier mais cela implique de faire une transformation du mouvement vertical en horizontal. Pour éviter les imprécisions liées à notre montage nous avons préféré changer de capteur.
+En dernier lieu nous sommes partis sur un accéléromètre pour détecter une accélération à chaque fois qu’une lettre est déposé. Ce capteur nous convient totalement: l’étalonnage des données est bon et surtout la précision est bonne car nous détectons la pose d’une feuille de 5 grammes.
+
+
+## **Premier prototype:**
+
+![](images/table%20proto.png)
