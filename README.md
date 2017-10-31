@@ -1,4 +1,4 @@
-S**MA**RT**IL**
+# S**MA**RT**IL**
 
 Boite aux lettres connectées
 
@@ -97,7 +97,7 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 </table>
 
 
-Etudes des capteurs et actionneurs à utiliser:
+## Etudes des capteurs et actionneurs à utiliser:
 
 Problème: détection de la réception du courrier. La quantité de courrier n’est pas intéressant à connaître, cependant nous voulons savoir quand une personne dépose quelque chose dans la boîte aux lettres.
 
@@ -109,10 +109,10 @@ De ce fait nous voulions le positionner à l’horizontal au fond de notre boiti
 
 En dernier lieu nous sommes partis sur un accéléromètre pour détecter une accélération à chaque fois qu’une lettre est déposé. Ce capteur nous convient totalement: l’étalonnage des données est bon et surtout la précision est bonne car nous détectons la pose d’une feuille de 5 grammes.
 
-Premier prototype:
+## Premier prototype:
 
-![image alt text](image_0.jpg)
+![image alt text](/images/image_0.jpg)
 
-![image alt text](image_1.jpg)
+![image alt text](/images/image_1.jpg)
 
 
