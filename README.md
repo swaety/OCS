@@ -106,4 +106,4 @@ En dernier lieu nous sommes partis sur un accéléromètre pour détecter une ac
 
 ## **Premier prototype:**
 
-![](images/table proto.png?raw=true)
+![GitHub Logo](/images/proto.png)
