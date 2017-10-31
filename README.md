@@ -1,6 +1,6 @@
-# S**MA**RT**IL**
+S**MA**RT**IL**
 
-Boite aux lettres connectées
+# Boite aux lettres connectées
 
 ## **Groupe :**
 
@@ -10,9 +10,9 @@ Boite aux lettres connectées
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
 
-### **Scénarios d’utilisation:**
+## **Scénarios d’utilisation:**
 
-**Définition d’un utilisateur type du système : **
+### Définition d’un utilisateur type du système : 
 
 Bob est une personne lambda qui attend souvent pour son courrier. Il va régulièrement à sa boîte aux lettres mais il aimerait ne pas y aller pour rien. De ce fait, il aimerait pouvoir savoir si le facteur est passé ou non. De même Bob, étant souvent sur son lieu de travail aimerait pouvoir jeter un coup d’oeil au contenu de sa boîte aux lettres afin d'être informé plus précisément de son contenu. De plus comme Bob travaille beaucoup, il n’a pas vraiment le temps de se déplacer et d’aller à la poste, ainsi il souhaiterait pouvoir recevoir tous ses colis et lettres contre signature sans avoir à être présent. Enfin, il aimerait surtout pouvoir envoyer ses colis et ses lettres bien plus facilement que ce qui n’existe à l’heure actuelle; c’est à dire, les laisser dans sa boite aux lettres et que le facteur se charge de la transmission pour envoie.
 
@@ -20,15 +20,15 @@ Charles est une personne à mobilité réduite, il  du mal à se déplacer tous 
 
 Dominique est un responsable de la Poste. Il souhaite pouvoir optimiser les tournées de ses facteurs. En effet la démographie d’une ville est en constante évolution et il faut toujours adapter les parcours de chaque facteur pour optimiser le temps de travail.
 
-**Un bon vers le futur ?**
+## Un bon vers le futur ?
 
 Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur d’humidité, de température et sera reliée à une API météo afin de prévenir ses utilisateurs que la météo capricieuse risque de détériorer le contenu de sa boite aux lettre.
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-**Équipement TIC :**
+## **Équipement TIC :**
 
-**Capteurs et actionneurs**
+### Capteurs et actionneurs
 
 <table>
   <tr>
@@ -97,7 +97,7 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 </table>
 
 
-## Etudes des capteurs et actionneurs à utiliser:
+## **Etudes des capteurs et actionneurs à utiliser:**
 
 Problème: détection de la réception du courrier. La quantité de courrier n’est pas intéressant à connaître, cependant nous voulons savoir quand une personne dépose quelque chose dans la boîte aux lettres.
 
@@ -109,10 +109,15 @@ De ce fait nous voulions le positionner à l’horizontal au fond de notre boiti
 
 En dernier lieu nous sommes partis sur un accéléromètre pour détecter une accélération à chaque fois qu’une lettre est déposé. Ce capteur nous convient totalement: l’étalonnage des données est bon et surtout la précision est bonne car nous détectons la pose d’une feuille de 5 grammes.
 
-## Premier prototype:
+## **Premier prototype:**
 
-![image alt text](/images/image_0.jpg)
+![image alt text](/images/image_0.jpg)![image alt text](/images/image_1.jpg)
 
-![image alt text](/images/image_1.jpg)
+## **Maquette Solidworks:**
 
+![image alt text](/images/image_2.png)
+
+![image alt text](/images/image_3.png)![image alt text](/images/image_4.png)
+
+![image alt text](/images/image_5.png)![image alt text](/images/image_6.png)
 
