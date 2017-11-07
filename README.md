@@ -2,7 +2,7 @@ S**MA**RT**IL**
 
 # Boite aux lettres connectées
 
-## **Groupe :**
+## **Groupe**
 
 * ABDELKADER Ibrahim, [ibrahim.abdelkader@](mailto:ibrahim.abdelkader@esprit.tn)[etu.unice.fr](mailto:jonathan.boudab@etu.unice.fr), IAM
 
@@ -10,7 +10,9 @@ S**MA**RT**IL**
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
 
-## **Scénarios d’utilisation:**
+[[TOC]]
+
+## **Scénarios d’utilisation**
 
 ### Définition d’un utilisateur type du système : 
 
@@ -26,7 +28,7 @@ Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur
 
 Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.
 
-## **Équipement TIC :**
+## **Équipement TIC **
 
 ### Capteurs et actionneurs
 
@@ -97,43 +99,29 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 </table>
 
 
-## **Etudes des capteurs et actionneurs à utiliser:**
+[Pièces commandées](/Pieces_commandees.xlsx)
 
-Problème: détection de la réception du courrier. La quantité de courrier n’est pas intéressant à connaître, cependant nous voulons savoir quand une personne dépose quelque chose dans la boîte aux lettres.
+## **Etudes des capteurs et actionneurs**
 
-De ce fait nous sommes partis sur plusieurs hypothèses. Au début nous avons cherché à faire un système de balance pour détecter une différence de poids entre chaque pose de lettres grâce à un capteur de force ou un capteur de torsion. Les deux capteurs posent problème sur l'étalonnage des données: mesure pas assez précises pour détecter la pose d’une enveloppe sur notre dispositif. De plus pour les deux dispositifs il faut utiliser quatre capteurs au vue de la taille de notre plateau. Cela pose un gros problème de stabilisation.
+[Etude des capteurs et actionneurs](/etudes.md)
 
-En deuxième lieu nous avons pensé à utiliser un potentiomètre. Le problème avec ce capteur est qu’il mesure 60 mm de long et donc son positionnement à la vertical est impossible car nous n’avons pas la hauteur nécessaire.
+## **Planning et Gantt**
 
-De ce fait nous voulions le positionner à l’horizontal au fond de notre boitier mais cela implique de faire une transformation du mouvement vertical en horizontal. Pour éviter les imprécisions liées à notre montage nous avons préféré changer de capteur.
+[Gantt](/Gantt.xlsx)
 
-En dernier lieu nous sommes partis sur un accéléromètre pour détecter une accélération à chaque fois qu’une lettre est déposé. Ce capteur nous convient totalement: l’étalonnage des données est bon et surtout la précision est bonne car nous détectons la pose d’une feuille de 5 grammes.
+## **Premier prototype**
 
-## **Premier prototype:**
+[Prototype](/Sprint1_mqtt/readme.md)
 
-![image alt text](/images/image_0.jpg)
+## **Maquette Solidworks**
 
-![image alt text](/images/image_1.jpg)
+[Maquette Solidworks](/Solidwords/README.md)
 
-## **Maquette Solidworks:**
+## **Devis et Démarchage des entreprises pour la création**
 
-![image alt text](/images/image_2.png)
+[Devis](/Devis_projet/readme.md)
 
-Maquette complète et assemblée
+## **Démarche Développement Produit**
 
-![image alt text](/images/image_3.png)
-
-Partie 1 de la maquette avec incorporation de la LED et du bouton
-
-![image alt text](/images/image_4.png)
-
-Partie 2 de la maquette avec incorporation du capteur infrarouge
-
-![image alt text](/images/image_5.png)
-
-Pièce permettant d’attacher toutes nos parties
-
-![image alt text](/images/image_6.png)
-
-Partie du capot
+lora
 
