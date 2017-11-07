@@ -113,7 +113,7 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 
 ## **Maquette Solidworks**
 
-[Maquette Solidworks](/Solidwords/README.md)
+[Maquette Solidworks](/Solidworks/README.md)
 
 ## **Devis et Démarchage des entreprises pour la création**
 
