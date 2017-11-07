@@ -96,24 +96,29 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
   </tr>
 </table>
 
-
-[Pièces commandées](/Pieces_commandees.xlsx)
-
-## **Etudes des capteurs et actionneurs**
-
-[Etude des capteurs et actionneurs](/etudes.md)
-
 ## **Planning et Gantt**
 
 [Gantt](/Gantt.xlsx)
 
-## **Premier prototype**
-
-[Prototype](/Sprint1_mqtt/readme.md)
-
 ## **Maquette Solidworks**
 
 [Maquette Solidworks](/Solidworks/README.md)
+
+## **Sprint**
+
+### **Sprint 0**
+
+**Etudes des capteurs et actionneurs**
+
+[Etude des capteurs et actionneurs](/EtudesCapteurs/etudes.md)
+
+[Pièces commandées](/Pieces_commandees.xlsx)
+
+### **Sprint 1**
+
+[Prototype](/Sprint1_mqtt/readme.md)
+
+### **Sprint 2**
 
 ## **Devis et Démarchage des entreprises pour la création**
 
