@@ -1,4 +1,4 @@
-Etude des capteurs et actionneurs
+# Etude des capteurs et actionneurs
 
 Afin de bien répondre aux besoins fonctionnels de notre boîte aux lettres connectée on aura besoin de deux types de capteurs :
 
@@ -22,5 +22,5 @@ Le capteur de force : Ce capteur est à étudier, cependant il ne nous semble que 
 
 L’accéléromètre : En dernier lieu nous sommes partis sur un accéléromètre pour détecter une accélération à chaque fois qu’une lettre est déposé. Ce capteur nous convient totalement: l’étalonnage des données est bon et surtout la précision est bonne car nous détectons la pose d’une feuille de 5 grammes.
 
-	Pour le deuxième point nous avons choisi d’utiliser un capteur de proximité infrarouge afin de détecter l’ouverture et la fermeture de la porte de la boîte aux lettres.
+Pour le deuxième point nous avons choisi d’utiliser un capteur de proximité infrarouge afin de détecter l’ouverture et la fermeture de la porte de la boîte aux lettres.
 
