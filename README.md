@@ -4,8 +4,6 @@ S**MA**RT**IL**
 
 ## **Groupe**
 
-* ABDELKADER Ibrahim, [ibrahim.abdelkader@etu.unice.fr](mailto:ibrahim.abdelkader@esprit.tn), IAM
-
 * BOUDAB Jonathan, [jonathan.boudab@etu.unice.fr](mailto:jonathan.boudab@etu.unice.fr), IAM
 
 * CHALTE Thomas,  [thomas.chalte@etu.unice.fr](mailto:thomas.chalte@etu.unice.fr), IAM
