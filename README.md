@@ -118,9 +118,7 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 
 ### **Sprint 2**
 
-[Signature automatique](/Sprint2/sigauto.md)
-
-[La Poste](/Sprint2/laposte.md)
+[Avancée du travail](/Sprint2/readme.md)
 
 ## **Devis et Démarchage des entreprises pour la création**
 
