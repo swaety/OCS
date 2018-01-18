@@ -5,7 +5,6 @@ import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 import services.CourrierServices;
 
-
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 

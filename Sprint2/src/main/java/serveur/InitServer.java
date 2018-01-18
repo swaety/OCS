@@ -17,14 +17,14 @@ public class InitServer {
     public void initialisation(){
 
         Courrier courrier0 = new Courrier("Calendar","10:45","17/12/2017","antibes","1 km/h");
-        MockDatabase.data.addApp(courrier0);
+        MockDatabase.data.addCourrier(courrier0);
         Courrier courrier1 = new Courrier("Phone","10:22","18/12/2017","cii","155 km/h");
-        MockDatabase.data.addApp(courrier1);
-        ArrayList<Courrier> listApp = new ArrayList<Courrier>();
-        listApp.add(courrier0);
-        listApp.add(courrier1);
+        MockDatabase.data.addCourrier(courrier1);
+        ArrayList<Courrier> listCourrier = new ArrayList<Courrier>();
+        listCourrier.add(courrier0);
+        listCourrier.add(courrier1);
 
-        JSONData.saveJSON(MockDatabase.data.getAppsList(), courrier);
+        JSONData.saveJSON(MockDatabase.data.getCourriersList(), courrier);
     }
 }
 

@@ -25,5 +25,4 @@ public class MockDatabase {
     public ArrayList<Courrier> getCourriersList() {
         return courriersList;
     }
-
 }

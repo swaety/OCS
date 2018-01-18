@@ -1,0 +1,24 @@
+{"Current session : ": [{
+    "idGeneSmart": 1,
+    "listApp": [
+        {
+            "date": "17/12/2017",
+            "horaire": "10:45",
+            "ide": 0,
+            "gps": "antibes",
+            "nom": "Calendar",
+            "idGene": 2,
+            "vitesse": "1 km/h"
+        },
+        {
+            "date": "18/12/2017",
+            "horaire": "10:22",
+            "ide": 1,
+            "gps": "cii",
+            "nom": "Phone",
+            "idGene": 2,
+            "vitesse": "155 km/h"
+        }
+    ],
+    "uuid": 0
+}]}
