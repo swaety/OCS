@@ -60,43 +60,23 @@
   </head>
   
   <body>
-  <link rel="stylesheet" type="text/css" href="../styles/indexM.css">
-  <div>    
-	
+  <link rel="stylesheet" href="../styles/envoiM.css">
+  <div id="conteneur">    	
 	<div class="topnav" id="myTopnav">
 		<a href="../html/indexM.php"><img class="home" src="../styles/images/home.png"></img></a>
 		<a href="../html/envoiM.php">Envoi</a>
 		<a href="../html/receptionM.php">Réception</a>
 		<a href="../html/facteurM.php">Tournée facteur</a>
 		<a href="../html/contactM.php">Contacts</a>
-		<a href="../html/creercompteM.php">S'inscrire</a>
-		<a href="../html/moncompteM.php">Mon compte</a>
+		<a id="logs" href="../html/creercompteM.php">S'inscrire</a>
+		<a id="logs" href="../html/moncompteM.php">Mon compte</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	</div> 	
-
-	<div>
-		<p>Bienvenue sur FoodFactory (mobile)</p>
-		<div style="width: 49.6%; float:left; border-right:1px solid black;">
-			<div style="width: 100%; border-bottom:1px solid black;">
-				<a href="../html/articleM.php"><img class="mbutton" src="../styles/images/article.png"></img></a>
-			</div>
-			<div style="width: 100%; border-top:1px solid black;">
-				<a href="../html/moncompteM.php"><img class="mbutton" src="../styles/images/login.png"></img></a>
-			</div>
-		</div>
-		<div style="width: 49.6%; float:right; border-left:1px solid black;">
-		   <div style="width: 100%; border-bottom:1px solid black;">
-				<a href="../html/listeM.php"><img class="mbutton" src="../styles/images/list.png"></img></a>
-			</div>
-			<div style="width: 100%; border-top:1px solid black;">
-				<a href="../html/contactM.php"><img class="mbutton" src="../styles/images/contact.png"></img></a>
-			</div>
-		</div>
-
-		<div class="button">
-			<a style="text-decoration:none;" href="../html/creercompte.html"><p id="butt">S'inscrire</p></a>
-		</div>
+	</div> 
+	
+	<div id="contenu">
+	
 	</div>
+	
 	<p id="footer">Réalisé par Thomas</p>
   </div>
   <script>
@@ -108,6 +88,8 @@
 			x.className = "topnav";
 		}
 	}
-  </script>  
+  </script>
   </body>
 </html>
+
+

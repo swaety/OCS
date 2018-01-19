@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <title>FoodFactory</title>
+    <title>Smartil</title>
 	<style>
 		img.home{
 		   display: block;
@@ -64,8 +64,9 @@
   <div id="conteneur">    	
 	<div class="topnav" id="myTopnav">
 		<a href="../html/indexM.php"><img class="home" src="../styles/images/home.png"></img></a>
-		<a href="../html/listeM.php">Listes</a>
-		<a href="../html/articleM.php">Articles</a>
+		<a href="../html/envoiM.php">Envoi</a>
+		<a href="../html/receptionM.php">Réception</a>
+		<a href="../html/facteurM.php">Tournée facteur</a>
 		<a href="../html/contactM.php">Contacts</a>
 		<a href="../html/creercompteM.php">S'inscrire</a>
 		<a href="../html/moncompteM.php">Mon compte</a>

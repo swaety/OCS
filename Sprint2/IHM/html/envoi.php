@@ -7,7 +7,7 @@ $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
 
 if ($iphone || $android || $palmpre || $ipod || $berry == true) 
 { 
-	header('Location: ./moncompteM.php');
+	header('Location: ./envoiM.php');
 }
 ?>
 
@@ -86,7 +86,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
   </head>
   
   <body>
-  <link rel="stylesheet" type="text/css" href="../styles/compte.css">
+  <link rel="stylesheet" href="../styles/envoi.css">
   <div id="conteneur">    
 	<img class="ban" src="../styles/images/ban.png"></img>
 	
@@ -101,13 +101,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 	</div> 
 	
 	<div id="contenu">
-		<label for="pseudo">Pseudo</label>
-		<input type="text" id="pseudo" name="pseudo" placeholder="Pseudo..">
-
-		<label for="mdp">Mot de passe</label>
-		<input type="password" id="mdp" name="mdp" placeholder="mot de passe..">
-	  
-		<input type="submit" value="Connexion">
+		
 	</div>
 	
 	<p id="footer">Réalisé par Thomas</p>

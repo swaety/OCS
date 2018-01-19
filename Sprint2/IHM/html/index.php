@@ -16,7 +16,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
   <head>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <title>FoodFactory</title>
+    <title>Smartil</title>
 	<link rel="icon" type="image/png" href="../styles/images/food.jpg" />
 	<style>
 		body
@@ -93,8 +93,9 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		
 		<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
-			<a href="../html/liste.php">Listes</a>
-			<a href="../html/article.php">Articles</a>
+			<a href="../html/envoi.php">Envoi</a>
+			<a href="../html/reception.php">Réception</a>
+			<a href="../html/facteur.php">Tournée facteur</a>
 			<a href="../html/contact.php">Contacts</a>
 			<a id="logs" href="../html/creercompte.php">S'inscrire</a>
 			<a id="logs" href="../html/moncompte.php">Mon compte</a>
