@@ -103,14 +103,33 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 
 		<div class="mainPagePC">
 			<h2>Bienvenue sur notre projet</h2>
-			<p>Notre site de FoodFactory. Ici nous allons utiliser Vanilla JS</p>
-			<p>Grace a food factory vous pourrez creer votre liste de course grace au scan ou a la recherche d'article, vous pourrez aussi avoir des informations nutritionelles de vos produits !</p>	
+			<h3>Définition d’un utilisateur type du système :</h3>
+				<p>Bob est une personne lambda qui attend souvent pour son courrier. Il va régulièrement à sa boîte aux lettres mais il aimerait ne pas y aller pour rien. 
+				De ce fait, il aimerait pouvoir savoir si le facteur est passé ou non. De même Bob, étant souvent sur son lieu de travail aimerait pouvoir jeter un coup d’oeil au 
+				contenu de sa boîte aux lettres afin d'être informé plus précisément de son contenu. De plus comme Bob travaille beaucoup, il n’a pas vraiment le temps de se déplacer
+				et d’aller à la poste, ainsi il souhaiterait pouvoir recevoir tous ses colis et lettres contre signature sans avoir à être présent. Enfin, il aimerait surtout pouvoir
+				envoyer ses colis et ses lettres bien plus facilement que ce qui n’existe à l’heure actuelle; c’est à dire, les laisser dans sa boite aux lettres et que le facteur se 
+				charge de la transmission pour envoie.</p>
+
+				<p>Charles est une personne à mobilité réduite, il du mal à se déplacer tous les jours à sa boîte aux lettres pour finalement voir son contenu vide, cependant il est
+				obligé de s’y déplacer régulièrement car il reçoit régulièrement des lettres importantes. Charles aimerait pouvoir notifier sa famille proche lors du passage du facteur 
+				afin que lors de ses visites on puisse lui relever le courrier.</p>
+
+				<p>Dominique est un responsable de la Poste. Il souhaite pouvoir optimiser les tournées de ses facteurs. En effet la démographie d’une ville est en constante évolution et 
+				il faut toujours adapter les parcours de chaque facteur pour optimiser le temps de travail.</p>
+
+				<h3>Un bon vers le futur ?</h3>
+				<p>Par souci de courrier mouillé, la boite aux lettre sera équipé d’un capteur d’humidité, de température et sera reliée à une API météo afin de prévenir ses utilisateurs que la météo 
+				apricieuse risque de détériorer le contenu de sa boite aux lettre.</p>
+
+				<p>Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.</p>	
 			<div id="video">
 				<div class="sub">
-					<iframe align="center" src="https://www.youtube.com/embed/W49LVs-V2-I" frameborder="0"></iframe>
+					<iframe align="center" src="https://www.youtube.com/watch?v=RypIQOQHZks" frameborder="0"></iframe>
 				</div>
 			</div>
-			<p>API : OpenFoodFacts </p>
+			<p>API : La Poste </p>
+			<a href="https://github.com/swaety/OCS">GitHub</a>
 		</div>
 		
 		<p id="footer">Réalisé par Thomas</p>
