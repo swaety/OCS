@@ -11,18 +11,18 @@ import java.util.ArrayList;
 public class MockDatabase {
     public static MockDatabase data = new MockDatabase();
 
-    private ArrayList<Courrier> courriersList;
+    private ArrayList<Boite> courriersList;
 
     public MockDatabase(){
-        courriersList = new ArrayList<Courrier>();
+        courriersList = new ArrayList<Boite>();
     }
 
-    public void addCourrier(Courrier courrier) {
-        courrier.generateID();
-        courriersList.add(courrier);
+    public void addCourrier(Boite boite) {
+        boite.generateID();
+        courriersList.add(boite);
     }
 
-    public ArrayList<Courrier> getCourriersList() {
+    public ArrayList<Boite> getCourriersList() {
         return courriersList;
     }
 }

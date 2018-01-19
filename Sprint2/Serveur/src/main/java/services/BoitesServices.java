@@ -1,7 +1,7 @@
 package services;
 
 import database.MockDatabase;
-import entities.Courrier;
+import entities.Boite;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -11,18 +11,18 @@ import java.util.ArrayList;
  * Created by Zeubi on 19/11/2017.
  */
 @Path("/courrier")
-public class CourrierServices {
+public class BoitesServices {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public long addApp(Courrier courrier) {
-        MockDatabase.data.addCourrier(courrier);
-        return courrier.getIde();
+    public long addCourrier(Boite boite) {
+        MockDatabase.data.addCourrier(boite);
+        return boite.getIde();
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public ArrayList<Courrier> getListApp() {
+    public ArrayList<Boite> getListCourrier() {
         return MockDatabase.data.getCourriersList();
     }
 }

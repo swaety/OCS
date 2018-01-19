@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 @XmlRootElement
 @Entity
-public class Courrier {
+public class Boite {
 
     private static long idGene = 0;
 
@@ -21,9 +21,9 @@ public class Courrier {
     private String vitesse;
     private long ide;
 
-    public Courrier() { ide = idGene++; }
+    public Boite() { ide = idGene++; }
 
-    public Courrier(String nom, String horaire, String date, String gps, String vitesse){
+    public Boite(String nom, String horaire, String date, String gps, String vitesse){
         this.nom=nom;
         this.horaire=horaire;
         this.date=date;
