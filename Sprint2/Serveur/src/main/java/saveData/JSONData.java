@@ -55,4 +55,10 @@ public class JSONData{
 
     }
 
+    public static void loadJSON (Object obje, File file) {
+        System.out.printf("Loading as JSON file...");
+
+
+    }
+
 }
