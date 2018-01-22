@@ -25,7 +25,6 @@ public class BoitesServices {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Boite> getListBoite() {
-        MockDatabase.data.saveBoite();
         return MockDatabase.data.getBoitesList();
     }
 

@@ -8,6 +8,7 @@ import services.ParticuliersServices;
 import services.PostesServices;
 
 import javax.ws.rs.core.UriBuilder;
+import java.io.IOException;
 import java.net.URI;
 
 /**
@@ -18,7 +19,7 @@ import java.net.URI;
  * Main Class for the server
  */
 public class MainServer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         URI baseUri = UriBuilder.fromUri("http://localhost/").port(8080).build();
         ResourceConfig config = new ResourceConfig(BoitesServices.class);
         config.register(ParticuliersServices.class);

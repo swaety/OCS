@@ -5,9 +5,11 @@ import database.MockDatabase;
 import entities.Boite;
 import entities.Particulier;
 import entities.Poste;
-import saveData.JSONData;
+import loadAndSaveData.LoadBoite;
+import loadAndSaveData.SaveData;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -21,7 +23,7 @@ public class InitServer {
 
     public InitServer(){}
 
-    public void initialisation(){
+    public void initialisation() throws IOException {
 
         Particulier particulier0 = new Particulier("Lavirotte","Stéphane", 12,
                 3, 1970, "stephane@lavirotte.com", "0600000000", "sea3017",
@@ -56,9 +58,11 @@ public class InitServer {
         ArrayList<Poste> listPoste = new ArrayList<Poste>();
         listPoste.add(poste0);
 
-        //JSONData.saveJSON(MockDatabase.data.getBoitesList(), boite);
-        JSONData.saveJSON(MockDatabase.data.getParticuliersList(), particulier);
-        JSONData.saveJSON(MockDatabase.data.getPostesList(), poste);
+        //LoadBoite.load(null,boite);
+
+        SaveData.saveJSON(MockDatabase.data.getBoitesList(), boite);
+        SaveData.saveJSON(MockDatabase.data.getParticuliersList(), particulier);
+        SaveData.saveJSON(MockDatabase.data.getPostesList(), poste);
     }
 }
 

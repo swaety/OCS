@@ -1,4 +1,4 @@
-package saveData;
+package loadAndSaveData;
 
 import java.io.*;
 import org.json.*;
@@ -11,7 +11,7 @@ import org.json.*;
  * Gerer le sauvegarde de donnees en format JSON. Le JSON est sauvegarde dans un format text.
  *
  */
-public class JSONData{
+public class SaveData {
 
     /**
      * Sauvegarder un objet en format JSON text.
@@ -54,11 +54,4 @@ public class JSONData{
         }
 
     }
-
-    public static void loadJSON (Object obje, File file) {
-        System.out.printf("Loading as JSON file...");
-
-
-    }
-
 }

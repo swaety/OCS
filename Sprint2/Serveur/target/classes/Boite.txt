@@ -1,11 +1,6 @@
 {"Current session : ": [
     {
-        "listColis": [{
-            "dateHeurePri": "prions que ça soit bon",
-            "ide": 999,
-            "dateHeureDep": "il est l'heure de poser le colis",
-            "statut": true
-        }],
+        "listColis": [],
         "adresseCP": "06600",
         "adresseVille": "Cannes",
         "adresseRue": "chemin du valbosquet",
