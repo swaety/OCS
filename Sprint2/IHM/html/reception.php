@@ -23,6 +23,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			margin: 10px 0 ;
 			padding: 0 ;
 			font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+			background-image:url(./../styles/images/back.png);
 		}
 
 		div#conteneur
@@ -82,6 +83,12 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		.topnav .icon {
 			display: none;
 		}
+		table{
+			border-collapse: collapse;
+		}
+		td, th{
+			border: 1px solid black;
+		}
 	</style>	
   </head>
   
@@ -100,13 +107,26 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		<a id="logs" href="../html/moncompte.php">Mon compte</a>
 	</div> 
 	
-	<div id="contenu">
+	<div id="contenu" style="text-align: center;">
+		<p style="font-size: 3em; text-align: center;">Mes courrier reçu sur mon Smartil</p>
+		<br><br><br>
+		<table style="text-align: center; margin-left: auto; margin-right: auto;">	   
+		   <thead>
+				<tr>
+					<th>Heure de récéption de courrier</th>
+				</tr>
+			</thead>
+			<tbody id="tab">
+			
+			</tbody>
+		</table>
 		
 	</div>
-	
-	<p id="footer">Réalisé par Thomas</p>
+	<br><br><br>
+	<p id="footer">Réalisé par Thomas & Jonathan</p>
   </div>
   </body>
 </html>
+<script src="../scripts/reception.js"></script>
 
 

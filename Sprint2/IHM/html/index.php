@@ -24,6 +24,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			margin: 10px 0 ;
 			padding: 0 ;
 			font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+			background-image:url(./../styles/images/back.png);
 		}
 
 		div#conteneur
@@ -123,16 +124,11 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 				apricieuse risque de détériorer le contenu de sa boite aux lettre.</p>
 
 				<p>Enfin pour un futur toujours plus propre, nous pourrions proposer comme option sur notre Smartil, de rajouter un mini panneau solaire afin de l’alimenter en énergie électrique.</p>	
-			<div id="video">
-				<div class="sub">
-					<iframe align="center" src="https://www.youtube.com/watch?v=RypIQOQHZks" frameborder="0"></iframe>
-				</div>
-			</div>
 			<p>API : La Poste </p>
 			<a href="https://github.com/swaety/OCS">GitHub</a>
 		</div>
 		
-		<p id="footer">Réalisé par Thomas</p>
+		<p id="footer">Réalisé par Thomas & Jonathan</p>
 	  </div>  
   </body>
 </html>

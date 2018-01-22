@@ -83,7 +83,7 @@
 		<input type="submit" value="Connexion">
 	</div>
 	
-	<p id="footer">Réalisé par Thomas</p>
+	<p id="footer">Réalisé par Thomas & Jonathan</p>
   </div>
   <script>
 	function myFunction() {

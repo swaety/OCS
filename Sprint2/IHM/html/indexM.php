@@ -97,7 +97,7 @@
 			<a style="text-decoration:none;" href="../html/creercompte.html"><p id="butt">S'inscrire</p></a>
 		</div>
 	</div>
-	<p id="footer">Réalisé par Thomas</p>
+	<p id="footer">Réalisé par Thomas & Jonathan</p>
   </div>
   <script>
 	function myFunction() {

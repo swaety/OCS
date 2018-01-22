@@ -23,6 +23,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			margin: 10px 0 ;
 			padding: 0 ;
 			font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+			background-image:url(./../styles/images/back.png);
 		}
 
 		div#conteneur
@@ -104,7 +105,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		
 	</div>
 	
-	<p id="footer">Réalisé par Thomas</p>
+	<p id="footer">Réalisé par Thomas & Jonathan</p>
   </div>
   </body>
 </html>

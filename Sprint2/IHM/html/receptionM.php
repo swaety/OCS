@@ -77,7 +77,7 @@
 
 	</div>
 	
-	<p id="footer">Réalisé par Thomas</p>
+	<p id="footer">Réalisé par Thomas & Jonathan & Jonathan</p>
   </div>
   <script>
 	function myFunction() {
