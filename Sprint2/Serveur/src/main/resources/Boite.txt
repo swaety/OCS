@@ -1,5 +1,6 @@
 {"Current session : ": [
     {
+        "listColis": [],
         "adresseCP": "06600",
         "adresseVille": "Cannes",
         "adresseRue": "chemin du valbosquet",
@@ -7,16 +8,19 @@
         "adresseNum": 329,
         "nom": "Maison",
         "adressePays": "FR",
+        "listCourrier": [],
         "idGene": 2
     },
     {
+        "listColis": [],
         "adresseCP": "06460",
         "adresseVille": "Biot",
         "adresseRue": "rue Henri Poincarre",
         "ide": 1,
         "adresseNum": 85,
-        "nom": "Maison",
+        "nom": "Ecole",
         "adressePays": "FR",
+        "listCourrier": [],
         "idGene": 2
     }
 ]}

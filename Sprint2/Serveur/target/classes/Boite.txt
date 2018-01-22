@@ -1,5 +1,11 @@
 {"Current session : ": [
     {
+        "listColis": [{
+            "dateHeurePri": "prions que ça soit bon",
+            "ide": 999,
+            "dateHeureDep": "il est l'heure de poser le colis",
+            "statut": true
+        }],
         "adresseCP": "06600",
         "adresseVille": "Cannes",
         "adresseRue": "chemin du valbosquet",
@@ -7,16 +13,19 @@
         "adresseNum": 329,
         "adressePays": "FR",
         "nom": "Maison",
+        "listCourrier": [],
         "idGene": 2
     },
     {
+        "listColis": [],
         "adresseCP": "06460",
         "adresseVille": "Biot",
         "adresseRue": "rue Henri Poincarre",
         "ide": 1,
         "adresseNum": 85,
         "adressePays": "FR",
-        "nom": "Maison",
+        "nom": "Ecole",
+        "listCourrier": [],
         "idGene": 2
     }
 ]}

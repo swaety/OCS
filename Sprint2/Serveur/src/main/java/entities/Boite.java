@@ -3,6 +3,7 @@ package entities;
 
 import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 
 /**
  * Created by Thomas on 22/01/2018.
@@ -20,6 +21,8 @@ public class Boite {
     private String adresseVille;
     private String adressePays;
     private long ide;
+    private ArrayList<Courrier> listCourrier;
+    private ArrayList<Colis> listColis;
 
     public Boite() { ide = idGene++; }
 
@@ -30,11 +33,29 @@ public class Boite {
         this.adresseCP = adresseCP;
         this.adresseVille = adresseVille;
         this.adressePays = adressePays;
+        listCourrier = new ArrayList<Courrier>();
+        listColis = new ArrayList<Colis>();
         ide = idGene++;
     }
 
     public void generateID(){
         this.setIde(idGene-1);
+    }
+
+    public ArrayList<Colis> getListColis() {
+        return listColis;
+    }
+
+    public void setListColis(ArrayList<Colis> listColis) {
+        this.listColis = listColis;
+    }
+
+    public ArrayList<Courrier> getListCourrier() {
+        return listCourrier;
+    }
+
+    public void setListCourrier(ArrayList<Courrier> listCourrier) {
+        this.listCourrier = listCourrier;
     }
 
     public static long getIdGene() {

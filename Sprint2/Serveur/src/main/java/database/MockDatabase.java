@@ -2,7 +2,6 @@ package database;
 
 
 import entities.*;
-
 import java.util.ArrayList;
 
 
@@ -48,5 +47,55 @@ public class MockDatabase {
 
     public ArrayList<Poste> getPostesList() {
         return postesList;
+    }
+
+    public ArrayList<Courrier> getCourrierList(long id){
+        for (Boite b: boitesList) {
+            if(b.getIde()==id){
+                return b.getListCourrier();
+            }
+        }
+        return null;
+    }
+
+    public void addCourrier(long id, Courrier courrier){
+        for (Boite b: boitesList) {
+            if(b.getIde()==id){
+                b.getListCourrier().add(courrier);
+            }
+        }
+    }
+
+    public ArrayList<Colis> getColisList(long idBoite) {
+        for (Boite b: boitesList) {
+            if(b.getIde()==idBoite){
+                return b.getListColis();
+            }
+        }
+        return null;
+    }
+
+
+    public void addColis(long idBoite, Colis colis, long idColis) {
+        colis.setIde(idColis);
+        colis.setStatut(false);
+        for (Boite b: boitesList) {
+            if(b.getIde()==idBoite){
+                b.getListColis().add(colis);
+            }
+        }
+    }
+
+    public void modifierColis(long idBoite, Colis colis, long idColis) {
+        for (Boite b: boitesList) {
+            if(b.getIde()==idBoite){
+                for (Colis c : b.getListColis()) {
+                    if(c.getIde()==idColis){
+                        c.setStatut(true);
+                        c.setDateHeurePri(colis.getDateHeurePri());
+                    }
+                }
+            }
+        }
     }
 }
