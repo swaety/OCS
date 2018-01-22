@@ -6,6 +6,9 @@ import javax.ws.rs.container.ContainerResponseFilter;
 
 import javax.ws.rs.core.MediaType;
 
+/**
+ * Created by Thomas on 22/01/2018.
+ */
 public class CharsetResponseFilter implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext request, ContainerResponseContext response) {

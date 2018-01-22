@@ -4,11 +4,15 @@ import com.sun.net.httpserver.HttpServer;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 import services.BoitesServices;
-import services.ComptesServices;
+import services.ParticuliersServices;
 import services.PostesServices;
 
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
+
+/**
+ * Created by Thomas on 22/01/2018.
+ */
 
 /**
  * Main Class for the server
@@ -17,7 +21,7 @@ public class MainServer {
     public static void main(String[] args) {
         URI baseUri = UriBuilder.fromUri("http://localhost/").port(8080).build();
         ResourceConfig config = new ResourceConfig(BoitesServices.class);
-        config.register(ComptesServices.class);
+        config.register(ParticuliersServices.class);
         config.register(PostesServices.class);
         config.register(CORSFilter.class);
         config.register(CharsetResponseFilter.class);

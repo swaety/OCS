@@ -1,20 +1,22 @@
 {"Current session : ": [
     {
-        "date": "17/12/2017",
-        "horaire": "10:45",
+        "adresseCP": "06600",
+        "adresseVille": "Cannes",
+        "adresseRue": "chemin du valbosquet",
         "ide": 0,
-        "gps": "antibes",
-        "nom": "Calendar",
-        "idGene": 2,
-        "vitesse": "1 km/h"
+        "adresseNum": 329,
+        "adressePays": "FR",
+        "nom": "Maison",
+        "idGene": 2
     },
     {
-        "date": "18/12/2017",
-        "horaire": "10:22",
+        "adresseCP": "06460",
+        "adresseVille": "Biot",
+        "adresseRue": "rue Henri Poincarre",
         "ide": 1,
-        "gps": "cii",
-        "nom": "Phone",
-        "idGene": 2,
-        "vitesse": "155 km/h"
+        "adresseNum": 85,
+        "adressePays": "FR",
+        "nom": "Maison",
+        "idGene": 2
     }
 ]}

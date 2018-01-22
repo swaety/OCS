@@ -8,22 +8,22 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 
 /**
- * Created by Zeubi on 19/11/2017.
+ * Created by Thomas on 22/01/2018.
  */
-@Path("/courrier")
+@Path("/boite")
 public class BoitesServices {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public long addCourrier(Boite boite) {
-        MockDatabase.data.addCourrier(boite);
+    public long addBoite(Boite boite) {
+        MockDatabase.data.addBoite(boite);
         return boite.getIde();
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public ArrayList<Boite> getListCourrier() {
-        return MockDatabase.data.getCourriersList();
+    public ArrayList<Boite> getListBoite() {
+        return MockDatabase.data.getBoitesList();
     }
 }
 

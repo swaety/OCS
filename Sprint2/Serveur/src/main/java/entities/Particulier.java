@@ -9,11 +9,18 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @Entity
-public class Boite {
+public class Particulier {
 
     private static long idGene = 0;
 
     private String nom;
+    private String prenom;
+    private int dateJour;
+    private int dateMois;
+    private int dateAnnee;
+    private String mail;
+    private String tel;
+    private String mdp;
     private int adresseNum;
     private String adresseRue;
     private String adresseCP;
@@ -21,10 +28,19 @@ public class Boite {
     private String adressePays;
     private long ide;
 
-    public Boite() { ide = idGene++; }
+    public Particulier() { ide = idGene++; }
 
-    public Boite(String nom, int adresseNum, String adresseRue, String adresseCP, String adresseVille, String adressePays) {
+    public Particulier(String nom, String prenom, int dateJour, int dateMois,
+                       int dateAnnee, String mail, String tel, String mdp, int adresseNum,
+                       String adresseRue, String adresseCP, String adresseVille, String adressePays) {
         this.nom = nom;
+        this.prenom = prenom;
+        this.dateJour = dateJour;
+        this.dateMois = dateMois;
+        this.dateAnnee = dateAnnee;
+        this.mail = mail;
+        this.tel = tel;
+        this.mdp = mdp;
         this.adresseNum = adresseNum;
         this.adresseRue = adresseRue;
         this.adresseCP = adresseCP;
@@ -42,7 +58,7 @@ public class Boite {
     }
 
     public static void setIdGene(long idGene) {
-        Boite.idGene = idGene;
+        Particulier.idGene = idGene;
     }
 
     public String getNom() {
@@ -51,6 +67,62 @@ public class Boite {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public int getDateJour() {
+        return dateJour;
+    }
+
+    public void setDateJour(int dateJour) {
+        this.dateJour = dateJour;
+    }
+
+    public int getDateMois() {
+        return dateMois;
+    }
+
+    public void setDateMois(int dateMois) {
+        this.dateMois = dateMois;
+    }
+
+    public int getDateAnnee() {
+        return dateAnnee;
+    }
+
+    public void setDateAnnee(int dateAnnee) {
+        this.dateAnnee = dateAnnee;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public String getMdp() {
+        return mdp;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
     }
 
     public int getAdresseNum() {
@@ -100,4 +172,6 @@ public class Boite {
     public void setIde(long ide) {
         this.ide = ide;
     }
+
+
 }
