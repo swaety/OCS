@@ -36,5 +36,3 @@ Toutes les données sont sauvegardées par le serveur dans une base de données 
 Pour avoir la meilleure performance possible, nous avons développé une interface web en vanilla JS. Celle ci est assez minimaliste au niveau de design mais suffisante l’utilisabilité de notre projet
 
 url de l’interface bientot disponible
-
-
