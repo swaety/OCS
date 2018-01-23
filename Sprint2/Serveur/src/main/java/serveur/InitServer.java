@@ -23,7 +23,7 @@ public class InitServer {
 
     public InitServer(){}
 
-    public void initialisation() throws IOException {
+    public void initialisation() {
 
         Particulier particulier0 = new Particulier("Lavirotte","Stéphane", 12,
                 3, 1970, "stephane@lavirotte.com", "0600000000", "sea3017",

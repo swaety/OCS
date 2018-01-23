@@ -19,8 +19,8 @@ import java.net.URI;
  * Main Class for the server
  */
 public class MainServer {
-    public static void main(String[] args) throws IOException {
-        URI baseUri = UriBuilder.fromUri("http://localhost/").port(8080).build();
+    public static void main(String[] args){
+        URI baseUri = UriBuilder.fromUri("http://localhost/").port(5555).build();
         ResourceConfig config = new ResourceConfig(BoitesServices.class);
         config.register(ParticuliersServices.class);
         config.register(PostesServices.class);
