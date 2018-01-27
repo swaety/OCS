@@ -102,14 +102,96 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 	</div> 
 	
 	<div id="contenu">
-		<label for="pseudo">Pseudo</label>
-		<input type="text" id="pseudo" name="pseudo" placeholder="Pseudo..">
+		Particulier ou poste
+	
+		<label for="nom">Nom</label>
+		<input type="text" id="nom" name="nom" placeholder="Nom..">
+		
+		<label for="nom">Prénom</label>
+		<input type="text" id="prenom" name="prenom" placeholder="Prénom..">
 
 		<label for="mdp">Mot de passe</label>
 		<input type="password" id="mdp" name="mdp" placeholder="mot de passe..">
 
 		<label for="mdpc">Mot de passe Confirmation</label>
 		<input type="password" id="mdpc" name="mdpc" placeholder="mot de passe..">
+		
+		<label for="tel">Téléphone</label>
+		<input type="text" id="tel" name="tel" placeholder="Téléphone..">
+		
+		<label for="date">Date de naissance</label>
+		<select id="dateJ" name="dateJ">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		  <option value="11">11</option>
+		  <option value="12">12</option>
+		  <option value="13">13</option>
+		  <option value="14">14</option>
+		  <option value="15">15</option>
+		  <option value="16">16</option>
+		  <option value="17">17</option>
+		  <option value="18">18</option>
+		  <option value="19">19</option>
+		  <option value="20">20</option>
+		  <option value="21">21</option>
+		  <option value="22">22</option>
+		  <option value="23">23</option>
+		  <option value="24">24</option>
+		  <option value="25">25</option>
+		  <option value="26">26</option>
+		  <option value="27">27</option>
+		  <option value="28">28</option>
+		  <option value="29">29</option>
+		  <option value="30">30</option>
+		  <option value="31">31</option>
+		</select>
+		
+		<select id="dateM" name="dateM">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		  <option value="11">11</option>
+		  <option value="12">12</option>
+		</select>
+		
+		<select id="dateA" name="dateA">
+		  <option value="1990">1990</option>
+		  <option value="1991">1991</option>
+		  <option value="1992">1992</option>
+		  <option value="1993">1993</option>
+		  <option value="1994">1994</option>
+		  <option value="1995">1995</option>
+		  <option value="1996">1996</option>
+		  <option value="1997">1997</option>
+		  <option value="1998">1998</option>
+		  <option value="1999">1999</option>
+		  <option value="2000">2000</option>
+		</select>
+		
+		<label for="adresse">Adresse</label>
+		<label for="numero">Numéro</label>
+		<input type="text" id="numero" name="numero" placeholder="Numéro..">
+		<label for="rue">Rue</label>
+		<input type="text" id="rue" name="rue" placeholder="Rue..">
+		<label for="codPost">Code postal</label>
+		<input type="text" id="codPost" name="codPost" placeholder="Code postal..">
+		<label for="ville">Ville</label>
+		<input type="text" id="ville" name="ville" placeholder="Ville..">
 		
 		<label for="country">Pays</label>
 		<select id="country" name="country">

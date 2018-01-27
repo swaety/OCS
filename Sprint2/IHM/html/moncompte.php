@@ -102,8 +102,8 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 	</div> 
 	
 	<div id="contenu">
-		<label for="pseudo">Pseudo</label>
-		<input type="text" id="pseudo" name="pseudo" placeholder="Pseudo..">
+		<label for="mel">Adresse Mail</label>
+		<input type="text" id="mel" name="mel" placeholder="adresse mail..">
 
 		<label for="mdp">Mot de passe</label>
 		<input type="password" id="mdp" name="mdp" placeholder="mot de passe..">

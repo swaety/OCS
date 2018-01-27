@@ -6,8 +6,8 @@
         "adresseRue": "chemin du valbosquet",
         "ide": 0,
         "adresseNum": 329,
-        "nom": "Maison",
         "adressePays": "FR",
+        "nom": "Maison",
         "listCourrier": [],
         "idGene": 2
     },
@@ -18,8 +18,8 @@
         "adresseRue": "rue Henri Poincarre",
         "ide": 1,
         "adresseNum": 85,
-        "nom": "Ecole",
         "adressePays": "FR",
+        "nom": "Ecole",
         "listCourrier": [],
         "idGene": 2
     }
