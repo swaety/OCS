@@ -1,0 +1,59 @@
+{"Current session : ": [
+    {
+        "adresseCP": "06600",
+        "adresseNum": 329,
+        "adressePays": "FR",
+        "adresseRue": "chemin du valbosquet",
+        "adresseVille": "Cannes",
+        "ide": 0,
+        "listColis": [
+            {
+                "dateHeureDep": "2018-01-22 22:46:13.611260",
+                "dateHeurePri": "2018-01-22 22:48:38.341375",
+                "ide": 1,
+                "statut": true
+            },
+            {
+                "dateHeureDep": "2018-01-22 22:46:20.961341",
+                "dateHeurePri": "2018-01-22 23:13:38.990035",
+                "ide": 2,
+                "statut": true
+            },
+            {
+                "dateHeureDep": "2018-01-22 22:46:24.291160",
+                "dateHeurePri": "2018-01-22 22:46:25.848935",
+                "ide": 3,
+                "statut": true
+            },
+            {
+                "dateHeureDep": "2018-01-22 22:48:36.216784",
+                "dateHeurePri": "2018-01-22 22:48:38.341375",
+                "ide": 1,
+                "statut": true
+            },
+            {
+                "dateHeureDep": "2018-01-22 22:48:44.028285",
+                "dateHeurePri": "2018-01-22 23:13:38.990035",
+                "ide": 2,
+                "statut": true
+            }
+        ],
+        "listCourrier": [
+            {
+                "dateHeure": "2018-01-22 22:46:04.275948"
+            }
+        ],
+        "nom": "Maison"
+    },
+    {
+        "adresseCP": "06460",
+        "adresseNum": 85,
+        "adressePays": "FR",
+        "adresseRue": "rue Henri Poincarre",
+        "adresseVille": "Biot",
+        "ide": 1,
+        "listColis": [],
+        "listCourrier": [],
+        "nom": "Ecole"
+    }
+]}
