@@ -1,4 +1,6 @@
 <?php
+include "db.php";
+session_start();
 $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
 $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
@@ -91,6 +93,10 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 	  <link rel="stylesheet" type="text/css" href="../styles/index.css">
 	  <div id="conteneur">    
 		<img class="ban" src="../styles/images/ban.png"></img>
+		<?php	if (isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) {
+		
+			
+		?>
 		
 		<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
@@ -98,9 +104,26 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			<a href="../html/reception.php">Réception</a>
 			<a href="../html/facteur.php">Tournée facteur</a>
 			<a href="../html/contact.php">Contacts</a>
+			<a id="logs" href="../html/index.php"><?php echo $_SESSION['username']; ?></a>
+			<a id="logs" href="logout.php">Deconnexion</a>
+		</div>
+				<?php
+			}
+		 else
+		 { ?>
+			<div class="topnav" id="myTopnav">
+			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
+			<a href="../html/envoi.php">Envoi</a>
+			<a href="../html/reception.php">Réception</a>
+			<a href="../html/facteur.php">Tournée facteur</a>
+			<a href="../html/contact.php">Contacts</a>
 			<a id="logs" href="../html/creercompte.php">S'inscrire</a>
 			<a id="logs" href="../html/moncompte.php">Mon compte</a>
-		</div> 	
+		    </div>
+			<?php
+			
+		} ?>
+		
 
 		<div class="mainPagePC">
 			<h2>Bienvenue sur notre projet</h2>
