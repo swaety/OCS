@@ -1,4 +1,11 @@
 <?php
+include "db.php";
+session_start();
+if (isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) {
+	//echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+	header("Location: index.php");
+} else {
+  
 $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
 $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
@@ -91,24 +98,90 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
   <div id="conteneur">    
 	<img class="ban" src="../styles/images/ban.png"></img>
 	
-	<div class="topnav" id="myTopnav">
-		<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
-		<a href="../html/envoi.php">Envoi</a>
-		<a href="../html/reception.php">Réception</a>
-		<a href="../html/facteur.php">Tournée facteur</a>
-		<a href="../html/contact.php">Contacts</a>
-		<a id="logs" href="../html/creercompte.php">S'inscrire</a>
-		<a id="logs" href="../html/moncompte.php">Mon compte</a>
-	</div> 
-	
+	<?php	if (isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) {
+		
+			
+		?>
+		
+		<div class="topnav" id="myTopnav">
+			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
+			<a href="../html/envoi.php">Envoi</a>
+			<a href="../html/reception.php">Réception</a>
+			<a href="../html/facteur.php">Tournée facteur</a>
+			<a href="../html/contact.php">Contacts</a>
+			<a id="logs" href="../html/index.php"><?php echo $_SESSION['username']; ?></a>
+			<a id="logs" href="logout.php">Deconnexion</a>
+		</div>
+				<?php
+			}
+		 else
+		 { ?>
+			<div class="topnav" id="myTopnav">
+			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
+			<a href="../html/envoi.php">Envoi</a>
+			<a href="../html/reception.php">Réception</a>
+			<a href="../html/facteur.php">Tournée facteur</a>
+			<a href="../html/contact.php">Contacts</a>
+			<a id="logs" href="../html/creercompte.php">S'inscrire</a>
+			<a id="logs" href="../html/moncompte.php">Mon compte</a>
+		    </div>
+			<?php
+			
+		} ?>
+	<?php
+	$db = new Db();
+	;
+	if(!empty($_POST['pseudo']) && !empty($_POST['mdp']) && !empty($_POST['email']) &&!empty($_POST['nom']) &&!empty($_POST['prenom'])&&!empty($_POST['country'])&&!empty($_POST['numero']))
+	{
+		$firstname = $db -> quote($_POST['prenom']);
+		$lastname = $db -> quote($_POST['nom']);
+		$username = $db -> quote($_POST['pseudo']);
+		$password = $db -> quote($_POST['mdp']);
+		$country = $db -> quote($_POST['country']);
+		$tel = $db -> quote($_POST['numero']);
+		$email = $db -> quote($_POST['email']);
+		
+		$checkusername =  $db->select("SELECT * FROM users WHERE username = '".$username."'");
+		
+		if($checkusername != false)
+		{
+			echo "<h1>Error</h1>";
+			echo "<p>Sorry, that username is taken. Please go back and try again.</p>";
+		}
+		else
+		{
+			$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+			$password = $db -> quote($hashed_password) ;
+			
+			$registerquery = $db->query("INSERT INTO `users` (`username`, `password`,`email`,`country`,`firstName`,`lastName`,`tel`) VALUES(".$username.", ".$password.",".$email.",".$country.",".$firstname.",".$lastname.",".$tel.")");
+			if($registerquery)
+			{
+				echo "<h1>Success</h1>";
+				echo "<p>Your account was successfully created. Please <a href=\"moncompte.php\">click here to login</a>.</p>";
+			}
+			else
+			{
+				echo "<h1>Error</h1>";
+				echo "<p>Sorry, your registration failed. Please go back and try again.</p>";    
+			}       
+		}
+	}
+	else
+{
+    ?>	
 	<div id="contenu">
 		Particulier ou poste
-	
+		<form method="post" action="creercompte.php" name="registerform" id="registerform">
+		<fieldset>
+
 		<label for="nom">Nom</label>
 		<input type="text" id="nom" name="nom" placeholder="Nom..">
 		
-		<label for="nom">Prénom</label>
+		<label for="prenom">Prénom</label>
 		<input type="text" id="prenom" name="prenom" placeholder="Prénom..">
+
+		<label for="pseudo">Pseudo</label>
+		<input type="text" id="pseudo" name="pseudo" placeholder="pseudo..">
 
 		<label for="mdp">Mot de passe</label>
 		<input type="password" id="mdp" name="mdp" placeholder="mot de passe..">
@@ -183,7 +256,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		  <option value="2000">2000</option>
 		</select>
 		
-		<label for="adresse">Adresse</label>
+		<label for="adresse">Adresse</label></br>
 		<label for="numero">Numéro</label>
 		<input type="text" id="numero" name="numero" placeholder="Numéro..">
 		<label for="rue">Rue</label>
@@ -204,12 +277,21 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		  <option value="usa">USA</option>
 		</select>
 		
-		<label for="mel">Adresse Mail</label>
-		<input type="text" id="mel" name="mel" placeholder="adresse mail..">
-	  
-		<input type="submit" value="Valider">
+		<label for="email">Adresse Mail</label>
+		<input type="text" id="email" name="email" placeholder="adresse mail..">
+		<input type="submit" name="register" id="register" value="Register" />
+		</fieldset>
+		</form>
+	<?php
+	}
+	?>
 	</div>
-	<p id="footer">Réalisé par Thomas & Jonathan</p>
+
+	
+	<p id="footer">Réalisé par l'équipe smartil</p>
   </div>
   </body>
 </html>
+<?php
+}
+?>
