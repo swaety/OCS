@@ -1,0 +1,44 @@
+#video{
+    width:100%;
+}
+
+div.sub, iframe {
+	max-width:100%;
+	max-height:100%;
+	width:640px;
+	height:360px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.mainPagePC
+{
+	padding: 25px 25px 25px 25px ;
+}
+
+div.mainPagePC h2
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.4em ;
+	color: #38EFD6 ;
+	border-bottom: 1px solid #38EFD6 ;
+}
+
+div.mainPagePC p
+{
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+
+div.mainPagePC a
+{
+	color: #9BF4E9 ;
+}
+
+div.mainPagePC a:hover
+{
+	color: #38EFD6 ;
+}

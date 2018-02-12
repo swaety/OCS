@@ -1,0 +1,14 @@
+{"Current session : ": [{
+    "adresseCP": "06600",
+    "rayonActivite": 10,
+    "mail": "laposte@laposte.com",
+    "adresseVille": "Antibes",
+    "adresseRue": "CHEMIN DES TERRIERS",
+    "mdp": "lesbolosses",
+    "tel": "04 93 34 61 73",
+    "ide": 0,
+    "adresseNum": 2,
+    "adressePays": "FR",
+    "nom": "Poste Principale",
+    "idGene": 1
+}]}

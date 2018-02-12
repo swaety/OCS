@@ -1,0 +1,24 @@
+{"Current session : ": [
+    {
+        "listColis": [],
+        "adresseCP": "06600",
+        "adresseVille": "Cannes",
+        "adresseRue": "chemin du valbosquet",
+        "adresseNum": 329,
+        "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
+        "adressePays": "FR",
+        "nom": "Maison",
+        "listCourrier": []
+    },
+    {
+        "listColis": [],
+        "adresseCP": "06460",
+        "adresseVille": "Biot",
+        "adresseRue": "rue Henri Poincarre",
+        "adresseNum": 85,
+        "uuid": "2fac1234-31f8-11b4-a222-080",
+        "adressePays": "FR",
+        "nom": "Ecole",
+        "listCourrier": []
+    }
+]}
