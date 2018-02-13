@@ -41,9 +41,9 @@ public class InitServer {
 
 
         Boite boite0 = new Boite("Maison", 329, "chemin du valbosquet", "06600",
-                "Cannes", "FR", "2fac1234-31f8-11b4-a222-08002b34c003");
+                "Antibes", "FR", "2fac1234-31f8-11b4-a222-08002b34c003");
         MockDatabase.data.addBoite(boite0);
-        Boite boite1 = new Boite("Ecole", 85, "rue Henri Poincarre", "06460",
+        Boite boite1 = new Boite("Ecole", 85, "rue Henri Poincare", "06410",
                 "Biot", "FR", "2fac1234-31f8-11b4-a222-080");
         MockDatabase.data.addBoite(boite1);
         ArrayList<Boite> listBoite = new ArrayList<Boite>();

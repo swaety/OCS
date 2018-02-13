@@ -26,4 +26,12 @@ public class ParticuliersServices {
     public ArrayList<Particulier> getListParticulier() {
         return MockDatabase.data.getParticuliersList();
     }
+
+    //retourner les boites d'un particulier
+
+    //retourner l'historique d'une boite d'un particulier
+
+    //ajouter une boite à une particulier
+
+    //mettre à jour les données d'une boite d'un particulier
 }

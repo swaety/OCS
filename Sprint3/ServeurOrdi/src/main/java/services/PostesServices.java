@@ -2,10 +2,12 @@ package services;
 
 
 import database.MockDatabase;
+import entities.Boite;
 import entities.Poste;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -25,5 +27,13 @@ public class PostesServices {
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Poste> getListPoste() {
         return MockDatabase.data.getPostesList();
+    }
+
+    //retourner les boites d'une poste
+    @GET
+    @Path("/{idPoste}/boite")
+    @Produces(MediaType.APPLICATION_JSON)
+    public ArrayList<Boite> getListBoitePoste(@PathParam("idPoste") long idPoste) throws IOException {
+        return MockDatabase.data.getBoitesListForPoste(idPoste);
     }
 }

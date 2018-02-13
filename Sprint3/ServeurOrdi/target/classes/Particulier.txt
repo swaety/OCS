@@ -1,6 +1,16 @@
 {"Current session : ": [
     {
-        "listBoite": [],
+        "listBoite": [{
+            "listColis": [],
+            "adresseCP": "06600",
+            "adresseVille": "Antibes",
+            "adresseRue": "chemin du valbosquet",
+            "adresseNum": 329,
+            "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
+            "nom": "Maison",
+            "adressePays": "FR",
+            "listCourrier": []
+        }],
         "dateMois": 3,
         "mail": "stephane@lavirotte.com",
         "dateJour": 12,
@@ -9,12 +19,12 @@
         "adresseCP": "06600",
         "dateAnnee": 1970,
         "adresseVille": "Cannes",
-        "adresseRue": "chemin du valbosquet",
         "mdp": "sea3017",
+        "adresseRue": "chemin du valbosquet",
         "tel": "0600000000",
         "adresseNum": 329,
-        "adressePays": "FR",
         "prenom": "Stéphane",
+        "adressePays": "FR",
         "idGene": 2
     },
     {
@@ -27,12 +37,12 @@
         "adresseCP": "06460",
         "dateAnnee": 1965,
         "adresseVille": "Biot",
-        "adresseRue": "rue Henri Poincarre",
         "mdp": "pfe2017",
+        "adresseRue": "rue Henri Poincarre",
         "tel": "0600020000",
         "adresseNum": 85,
-        "adressePays": "FR",
         "prenom": "Jean-Yves",
+        "adressePays": "FR",
         "idGene": 2
     }
 ]}
