@@ -7,8 +7,8 @@
             "adresseRue": "chemin du valbosquet",
             "adresseNum": 329,
             "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
-            "nom": "Maison",
             "adressePays": "FR",
+            "nom": "Maison",
             "listCourrier": []
         }],
         "dateMois": 3,

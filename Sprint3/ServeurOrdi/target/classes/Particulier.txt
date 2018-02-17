@@ -19,12 +19,12 @@
         "adresseCP": "06600",
         "dateAnnee": 1970,
         "adresseVille": "Cannes",
-        "mdp": "sea3017",
         "adresseRue": "chemin du valbosquet",
+        "mdp": "sea3017",
         "tel": "0600000000",
         "adresseNum": 329,
-        "prenom": "Stéphane",
         "adressePays": "FR",
+        "prenom": "Stéphane",
         "idGene": 2
     },
     {
@@ -37,12 +37,12 @@
         "adresseCP": "06460",
         "dateAnnee": 1965,
         "adresseVille": "Biot",
-        "mdp": "pfe2017",
         "adresseRue": "rue Henri Poincarre",
+        "mdp": "pfe2017",
         "tel": "0600020000",
         "adresseNum": 85,
-        "prenom": "Jean-Yves",
         "adressePays": "FR",
+        "prenom": "Jean-Yves",
         "idGene": 2
     }
 ]}

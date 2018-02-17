@@ -4,6 +4,7 @@ import com.sun.net.httpserver.HttpServer;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 import services.BoitesServices;
+import services.OkServices;
 import services.ParticuliersServices;
 import services.PostesServices;
 
@@ -24,6 +25,7 @@ public class MainServer {
         ResourceConfig config = new ResourceConfig(BoitesServices.class);
         config.register(ParticuliersServices.class);
         config.register(PostesServices.class);
+        config.register(OkServices.class);
         config.register(CORSFilter.class);
         config.register(CharsetResponseFilter.class);
         HttpServer server = JdkHttpServerFactory.createHttpServer(baseUri, config);
