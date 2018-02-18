@@ -175,8 +175,6 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			</div>
 		</div>
 	</div>
-	
-	<p id="footer">Réalisé par Thomas & Jonathan</p>
   </div>
   </body>
 </html>

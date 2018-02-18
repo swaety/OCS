@@ -1,16 +1,6 @@
 <?php
 include "db.php";
 session_start();
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-
-if ($iphone || $android || $palmpre || $ipod || $berry == true) 
-{ 
-	header('Location: ./indexM.php');
-}
 ?>
 
 <!DOCTYPE html">
@@ -144,8 +134,6 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			<p>API : La Poste </p>
 			<a href="https://github.com/swaety/OCS">GitHub</a>
 		</div>
-		
-		<p id="footer">Réalisé par Thomas & Jonathan</p>
 	  </div>  
   </body>
 </html>

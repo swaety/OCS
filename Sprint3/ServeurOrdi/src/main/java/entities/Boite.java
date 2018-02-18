@@ -12,8 +12,6 @@ import java.util.ArrayList;
 @Entity
 public class Boite {
 
-    private static long idGene = 0;
-
     private String nom;
     private int adresseNum;
     private String adresseRue;
@@ -23,6 +21,11 @@ public class Boite {
     private String uuid;
     private ArrayList<Courrier> listCourrier;
     private ArrayList<Colis> listColis;
+
+    public Boite(){
+        listCourrier = new ArrayList<Courrier>();
+        listColis = new ArrayList<Colis>();
+    }
 
     public Boite(String nom, int adresseNum, String adresseRue, String adresseCP, String adresseVille, String adressePays, String uuid) {
         this.nom = nom;

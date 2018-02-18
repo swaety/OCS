@@ -7,8 +7,8 @@
             "adresseRue": "chemin du valbosquet",
             "adresseNum": 329,
             "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
-            "adressePays": "FR",
             "nom": "Maison",
+            "adressePays": "FR",
             "listCourrier": []
         }],
         "dateMois": 3,
@@ -28,7 +28,17 @@
         "idGene": 2
     },
     {
-        "listBoite": [],
+        "listBoite": [{
+            "listColis": [],
+            "adresseCP": "06410",
+            "adresseVille": "Biot",
+            "adresseRue": "rue Henri Poincare",
+            "adresseNum": 85,
+            "uuid": "abc",
+            "nom": "Ecole",
+            "adressePays": "FR",
+            "listCourrier": []
+        }],
         "dateMois": 2,
         "mail": "jean-yves.tigli@unice.fr",
         "dateJour": 30,

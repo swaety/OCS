@@ -9,7 +9,6 @@ import services.ParticuliersServices;
 import services.PostesServices;
 
 import javax.ws.rs.core.UriBuilder;
-import java.io.IOException;
 import java.net.URI;
 
 /**
@@ -22,10 +21,10 @@ import java.net.URI;
 public class MainServer {
     public static void main(String[] args){
         URI baseUri = UriBuilder.fromUri("http://localhost/").port(5555).build();
-        ResourceConfig config = new ResourceConfig(BoitesServices.class);
+        ResourceConfig config = new ResourceConfig(OkServices.class);
+        config.register(BoitesServices.class);
         config.register(ParticuliersServices.class);
         config.register(PostesServices.class);
-        config.register(OkServices.class);
         config.register(CORSFilter.class);
         config.register(CharsetResponseFilter.class);
         HttpServer server = JdkHttpServerFactory.createHttpServer(baseUri, config);

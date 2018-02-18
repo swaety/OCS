@@ -171,8 +171,6 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		<?php
 	}
 		?>
-	
-	<p id="footer">Réalisé par l'équipe smartil</p>
   </div>
   </body>
 </html>

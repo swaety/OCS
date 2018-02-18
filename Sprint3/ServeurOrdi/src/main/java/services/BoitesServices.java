@@ -15,17 +15,17 @@ import java.util.ArrayList;
 @Path("/boite")
 public class BoitesServices {
 
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    public String addBoite(Boite boite) {
-        MockDatabase.data.addBoite(boite);
-        return boite.getUuid();
-    }
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Boite> getListBoite() {
         return MockDatabase.data.getBoitesList();
+    }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public String addBoitep(Boite boite) {
+        MockDatabase.data.addBoite(boite);
+        return "{\"Reception\":\"OK\"}";
     }
 
     @GET

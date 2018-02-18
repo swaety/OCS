@@ -6,8 +6,8 @@
         "adresseRue": "chemin du valbosquet",
         "adresseNum": 329,
         "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
-        "adressePays": "FR",
         "nom": "Maison",
+        "adressePays": "FR",
         "listCourrier": []
     },
     {
@@ -16,9 +16,9 @@
         "adresseVille": "Biot",
         "adresseRue": "rue Henri Poincare",
         "adresseNum": 85,
-        "uuid": "2fac1234-31f8-11b4-a222-080",
-        "adressePays": "FR",
+        "uuid": "abc",
         "nom": "Ecole",
+        "adressePays": "FR",
         "listCourrier": []
     }
 ]}

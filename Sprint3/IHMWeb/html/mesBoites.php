@@ -1,16 +1,6 @@
 <?php
 include "db.php";
 session_start();
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-
-if ($iphone || $android || $palmpre || $ipod || $berry == true) 
-{ 
-	header('Location: ./boitesM.php');
-}
 ?>
 
 <!DOCTYPE html">
@@ -90,7 +80,7 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
   </head>
   
   <body>
-	  <link rel="stylesheet" type="text/css" href="../styles/boites.css">
+	  <link rel="stylesheet" type="text/css" href="../styles/mesBoites.css">
 	  <div id="conteneur">    
 		<img class="ban" src="../styles/images/ban.png"></img>
 		
@@ -101,10 +91,9 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		
 		<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
-			<a href="../html/envoi.php">Envoi</a>
-			<a href="../html/reception.php">Réception</a>
-			<a href="../html/facteur.php">Tournée facteur</a>
 			<a href="../html/contact.php">Contacts</a>
+			<a href="../html/mesBoites.php">Mes Boites</a>
+			<a href="../html/courrier.php">Courrier</a>
 			<a id="logs" href="../html/index.php"><?php echo $_SESSION['username']; ?></a>
 			<a id="logs" href="logout.php">Deconnexion</a>
 		</div>
@@ -114,10 +103,8 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		 { ?>
 			<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
-			<a href="../html/envoi.php">Envoi</a>
-			<a href="../html/reception.php">Réception</a>
-			<a href="../html/facteur.php">Tournée facteur</a>
 			<a href="../html/contact.php">Contacts</a>
+			<a href="../html/courrier.php">Courrier</a>
 			<a id="logs" href="../html/creercompte.php">S'inscrire</a>
 			<a id="logs" href="../html/moncompte.php">Mon compte</a>
 		    </div>
@@ -126,11 +113,37 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 		} ?>	
 
 		<div class="mainPagePC">
-			
+			<br>
+			<div id="buttons">
+				<input type="submit" id="ajouterBoite" onclick="addboite()" value="Ajouter Boite">
+				<input type="submit" id="retour" onclick="retour()" value="retour" style="visibility: hidden;">
+			</div>
+			<br>
+			<div>
+				<div class="touteslistes2" id="data">
+					<table border="1" style="width:100%;">
+						<thead>
+							<tr>
+								<th>
+									<p style="text-align:center;">UUID</p>
+								</th>
+								<th>
+									<p style="text-align:center;">Adresse</p>
+								</th>
+								<th>
+									<p style="text-align:center;">Gérer</p>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
-		
-		<p id="footer">Réalisé par Thomas & Jonathan</p>
 	  </div>  
+	  <script type="text/javascript" src="../scripts/mesBoites.js" ></script>
   </body>
 </html>
 

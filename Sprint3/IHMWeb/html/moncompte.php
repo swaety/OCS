@@ -189,7 +189,6 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 	}
 	?>
 	</div>
-	<p id="footer">Réalisé par l'équipe SMARTIl</p>
   </div>
   </body>
 </html>

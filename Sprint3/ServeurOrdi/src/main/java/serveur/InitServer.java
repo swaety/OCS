@@ -44,7 +44,7 @@ public class InitServer {
                 "Antibes", "FR", "2fac1234-31f8-11b4-a222-08002b34c003");
         MockDatabase.data.addBoite(boite0);
         Boite boite1 = new Boite("Ecole", 85, "rue Henri Poincare", "06410",
-                "Biot", "FR", "2fac1234-31f8-11b4-a222-080");
+                "Biot", "FR", "abc");
         MockDatabase.data.addBoite(boite1);
         ArrayList<Boite> listBoite = new ArrayList<Boite>();
         listBoite.add(boite0);
@@ -59,6 +59,9 @@ public class InitServer {
         listPoste.add(poste0);
 
         particulier0.getListBoite().add(boite0);
+        //particulier0.getListBoite().add(boite1);
+        particulier1.getListBoite().add(boite1);
+        //particulier1.getListBoite().add(boite0);
 
         //LoadBoite.load(null,boite);
 

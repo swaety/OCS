@@ -183,4 +183,8 @@ public class Particulier {
     public void setListBoite(ArrayList<Boite> listBoite) {
         this.listBoite = listBoite;
     }
+
+    public void addBoite(Boite boite) {
+        listBoite.add(boite);
+    }
 }

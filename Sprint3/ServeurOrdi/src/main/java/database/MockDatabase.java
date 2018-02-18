@@ -181,4 +181,70 @@ public class MockDatabase {
 
         return Math.sqrt(distance)/1000;
     }
+
+    public ArrayList<Boite> getListBoitesParticulier(long idParticulier) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier) {
+                return p.getListBoite();
+            }
+        }
+        return null;
+    }
+
+    public ArrayList<Courrier> getListCourrierBoitesParticulier(long idParticulier, String idBoite) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier) {
+                for (Boite b: boitesList) {
+                    if(b.getUuid().compareTo(idBoite)==0){
+                        return b.getListCourrier();
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public void addBoiteParticulier(long idParticulier, Boite boite) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier){
+                p.addBoite(boite);
+                addBoite(boite);
+            }
+        }
+    }
+
+    public void putBoiteParticulier(long idParticulier, String idBoite, Boite boite) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier) {
+                for (Boite b: boitesList) {
+                    if(b.getUuid().compareTo(idBoite)==0){
+                        boitesList.remove(b);
+                        boitesList.add(boite);
+                    }
+                }
+            }
+        }
+    }
+
+    public void delBoiteParticulier(long idParticulier, String idBoite) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier) {
+                for (Boite b: boitesList) {
+                    if(b.getUuid().compareTo(idBoite)==0){
+                        boitesList.remove(b);
+                        p.getListBoite().remove(b);
+                    }
+                }
+            }
+        }
+    }
+
+    public void addBoiteParticulier2(long idParticulier, Boite boite) {
+        for (Particulier p: particuliersList) {
+            if(p.getIde()==idParticulier){
+                p.addBoite(boite);
+                addBoite(boite);
+            }
+        }
+    }
 }
