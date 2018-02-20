@@ -84,7 +84,7 @@ session_start();
 	  <div id="conteneur">    
 		<img class="ban" src="../styles/images/ban.png"></img>
 		
-		<?php	if (isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) {
+		<?php	if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'PARTICULIER') {
 		
 			
 		?>
@@ -97,21 +97,31 @@ session_start();
 			<a id="logs" href="../html/index.php"><?php echo $_SESSION['username']; ?></a>
 			<a id="logs" href="logout.php">Deconnexion</a>
 		</div>
-				<?php
-			}
-		 else
+		<?php
+		}
+				
+		else if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'POSTE')
 		 { ?>
 			<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
 			<a href="../html/contact.php">Contacts</a>
-			<a href="../html/courrier.php">Courrier</a>
+			<a href="../html/mesClients.php">Mes Clients</a>
+			<a id="logs" href="../html/index.php"><?php echo $_SESSION['username']; ?></a>
+			<a id="logs" href="logout.php">Deconnexion</a>
+		   </div>
+			<?php
+			
+		} else { ?>
+			<div class="topnav" id="myTopnav">
+			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
+			<a href="../html/contact.php">Contacts</a>
 			<a id="logs" href="../html/creercompte.php">S'inscrire</a>
 			<a id="logs" href="../html/moncompte.php">Mon compte</a>
 		    </div>
-			<?php
-			
-		} ?>	
+		<?php } ?>	
+<?php	if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'PARTICULIER') {
 
+?>
 		<div class="mainPagePC">
 			<br>
 			<div id="buttons">
@@ -143,6 +153,9 @@ session_start();
 			</div>
 		</div>
 	  </div>  
+	  <?php
+			}
+		 ?>
 	  <script type="text/javascript" src="../scripts/mesBoites.js" ></script>
   </body>
 </html>
