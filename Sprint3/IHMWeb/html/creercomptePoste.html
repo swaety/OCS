@@ -1,9 +1,13 @@
 <div id="poste"  >
+	
 				<form method="post" action="creercompte.php" name="registerform_poste" id="registerform_poste">
 					<fieldset>
-				<label for="nom_poste">Nom</label>
-				<input type="text" id="nom_poste" name="nom_poste" placeholder="Nom..">
-					
+				<label for="pseudo_poste">Pseudo</label>
+				<input type="text" id="pseudo_poste" name="pseudo_poste" placeholder="pseudo..">
+
+				<label for="nom_poste">Nom Poste</label>
+				<input type="text" id="nom_poste" name="nom_poste" placeholder="Nom Poste..">
+				
 				<label for="mdp_poste">Mot de passe</label>
 				<input type="password" id="mdp_poste" name="mdp_poste" placeholder="mot de passe..">
 
@@ -39,8 +43,8 @@
 				
 				<label for="activityRange_poste">Rayon d'activité</label>
 				<input type="text" id="activityRange_poste" name="activityRange_poste" placeholder="rayon d'activite en km">
-				
-				<input type="submit" name="register_poste" id="register_poste" value="Register" />
+				<input type="hidden" name="register_poste" id="register_poste" value="register_poste">
+				<input type="submit" name="register" id="register" value="Register" />
 				</fieldset>
 				</form>
 		</div>
