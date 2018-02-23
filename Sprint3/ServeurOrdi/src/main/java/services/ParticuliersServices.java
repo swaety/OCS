@@ -24,6 +24,13 @@ public class ParticuliersServices {
     }
 
     @GET
+    @Path("/{login}/{mdp}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public long getIDParticulier(@PathParam("login") String login,@PathParam("mdp") String mdp) {
+        return MockDatabase.data.getIDParticulier(login,mdp);
+    }
+
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Particulier> getListParticulier() {
         return MockDatabase.data.getParticuliersList();

@@ -158,7 +158,11 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			{
 				if(password_verify($password, $checklogin[0]['password'])) 
 				{
-				
+					echo $username;
+					echo $password;
+					echo '<script type="text/javascript">jsfunction($username,$password);</script>';
+;
+				//ici faire la requete
 				$email = $checklogin[0]['email'];
 				$category = $checklogin[0]['category'];
 				$_SESSION['username'] = $username;

@@ -14,6 +14,7 @@ public class Poste {
     private static long idGene = 0;
 
     private String nom;
+    private String pseudo;
     private int adresseNum;
     private String adresseRue;
     private String adresseCP;
@@ -29,10 +30,11 @@ public class Poste {
         ide = idGene++;
     }
 
-    public Poste(String nom, int adresseNum, String adresseRue, String adresseCP,
+    public Poste(String nom, String pseudo, int adresseNum, String adresseRue, String adresseCP,
                  String adresseVille, String adressePays, String mail, String tel,
                  String mdp, int rayonActivite) {
         this.nom = nom;
+        this.pseudo = pseudo;
         this.adresseNum = adresseNum;
         this.adresseRue = adresseRue;
         this.adresseCP = adresseCP;
@@ -143,5 +145,13 @@ public class Poste {
 
     public void setRayonActivite(int rayonActivite) {
         this.rayonActivite = rayonActivite;
+    }
+
+    public String getPseudo() {
+        return pseudo;
+    }
+
+    public void setPseudo(String pseudo) {
+        this.pseudo = pseudo;
     }
 }

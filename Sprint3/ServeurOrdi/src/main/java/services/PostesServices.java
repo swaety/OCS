@@ -24,6 +24,13 @@ public class PostesServices {
     }
 
     @GET
+    @Path("/{login}/{mdp}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public long getIDPoste(@PathParam("login") String login,@PathParam("mdp") String mdp) {
+        return MockDatabase.data.getIDPoste(login,mdp);
+    }
+
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
     public ArrayList<Poste> getListPoste() {
         return MockDatabase.data.getPostesList();

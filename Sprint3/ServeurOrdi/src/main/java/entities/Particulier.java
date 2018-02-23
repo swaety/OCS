@@ -16,6 +16,7 @@ public class Particulier {
 
     private String nom;
     private String prenom;
+    private String pseudo;
     private int dateJour;
     private int dateMois;
     private int dateAnnee;
@@ -32,11 +33,12 @@ public class Particulier {
 
     public Particulier() { ide = idGene++; }
 
-    public Particulier(String nom, String prenom, int dateJour, int dateMois,
+    public Particulier(String nom, String prenom, String pseudo, int dateJour, int dateMois,
                        int dateAnnee, String mail, String tel, String mdp, int adresseNum,
                        String adresseRue, String adresseCP, String adresseVille, String adressePays) {
         this.nom = nom;
         this.prenom = prenom;
+        this.pseudo = pseudo;
         this.dateJour = dateJour;
         this.dateMois = dateMois;
         this.dateAnnee = dateAnnee;
@@ -54,6 +56,14 @@ public class Particulier {
 
     public void generateID(){
         this.setIde(idGene-1);
+    }
+
+    public String getPseudo() {
+        return pseudo;
+    }
+
+    public void setPseudo(String pseudo) {
+        this.pseudo = pseudo;
     }
 
     public static long getIdGene() {

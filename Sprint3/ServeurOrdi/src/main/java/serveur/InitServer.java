@@ -25,12 +25,12 @@ public class InitServer {
 
     public void initialisation() {
 
-        Particulier particulier0 = new Particulier("Lavirotte","Stéphane", 12,
+        Particulier particulier0 = new Particulier("Lavirotte","Stéphane","stef", 12,
                 3, 1970, "stephane@lavirotte.com", "0600000000", "sea3017",
                 329, "chemin du valbosquet", "06600",
                 "Cannes", "FR");
         MockDatabase.data.addParticulier(particulier0);
-        Particulier particulier1 = new Particulier("Tigli","Jean-Yves", 30,
+        Particulier particulier1 = new Particulier("Tigli","Jean-Yves","sapin", 30,
                 2, 1965, "jean-yves.tigli@unice.fr", "0600020000", "pfe2017",
                 85, "rue Henri Poincarre", "06460",
                 "Biot", "FR");
@@ -50,7 +50,7 @@ public class InitServer {
         listBoite.add(boite0);
         listBoite.add(boite1);
 
-        Poste poste0 = new Poste("Poste Principale", 2, "CHEMIN DES TERRIERS", "06600",
+        Poste poste0 = new Poste("Poste Principale","poste1", 2, "CHEMIN DES TERRIERS", "06600",
                 "Antibes", "FR", "laposte@laposte.com", "04 93 34 61 73",
                 "lesbolosses", 10);
         MockDatabase.data.addPoste(poste0);

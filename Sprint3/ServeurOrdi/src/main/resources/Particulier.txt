@@ -25,6 +25,7 @@
         "adresseNum": 329,
         "adressePays": "FR",
         "prenom": "Stéphane",
+        "pseudo": "stef",
         "idGene": 2
     },
     {
@@ -53,6 +54,7 @@
         "adresseNum": 85,
         "adressePays": "FR",
         "prenom": "Jean-Yves",
+        "pseudo": "sapin",
         "idGene": 2
     }
 ]}

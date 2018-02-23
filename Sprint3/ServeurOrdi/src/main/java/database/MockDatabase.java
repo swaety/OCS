@@ -247,4 +247,22 @@ public class MockDatabase {
             }
         }
     }
+
+    public long getIDParticulier(String login, String mdp) {
+        for (Particulier p: particuliersList) {
+            if(p.getPseudo().compareTo(login)==0 && p.getMdp().compareTo(mdp)==0){
+                return p.getIde();
+            }
+        }
+        return Long.parseLong(null);
+    }
+
+    public long getIDPoste(String login, String mdp) {
+        for (Poste p: postesList) {
+            if(p.getPseudo().compareTo(login)==0 && p.getMdp().compareTo(mdp)==0){
+                return p.getIde();
+            }
+        }
+        return Long.parseLong(null);
+    }
 }
