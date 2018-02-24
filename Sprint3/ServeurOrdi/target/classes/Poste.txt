@@ -5,11 +5,11 @@
     "nom": "Poste Principale",
     "adresseCP": "06600",
     "adresseVille": "Antibes",
-    "adresseRue": "CHEMIN DES TERRIERS",
     "mdp": "lesbolosses",
+    "adresseRue": "CHEMIN DES TERRIERS",
     "tel": "04 93 34 61 73",
     "adresseNum": 2,
-    "adressePays": "FR",
     "pseudo": "poste1",
+    "adressePays": "FR",
     "idGene": 1
 }]}

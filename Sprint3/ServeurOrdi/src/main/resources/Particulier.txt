@@ -7,8 +7,8 @@
             "adresseRue": "chemin du valbosquet",
             "adresseNum": 329,
             "uuid": "2fac1234-31f8-11b4-a222-08002b34c003",
-            "nom": "Maison",
             "adressePays": "FR",
+            "nom": "Maison",
             "listCourrier": []
         }],
         "dateMois": 3,
@@ -23,8 +23,8 @@
         "adresseRue": "chemin du valbosquet",
         "tel": "0600000000",
         "adresseNum": 329,
-        "pseudo": "stef",
         "adressePays": "FR",
+        "pseudo": "stef",
         "prenom": "Stéphane",
         "idGene": 2
     },
@@ -36,8 +36,8 @@
             "adresseRue": "rue Henri Poincare",
             "adresseNum": 85,
             "uuid": "abc",
-            "nom": "Ecole",
             "adressePays": "FR",
+            "nom": "Ecole",
             "listCourrier": []
         }],
         "dateMois": 2,
@@ -52,8 +52,8 @@
         "adresseRue": "rue Henri Poincarre",
         "tel": "0600020000",
         "adresseNum": 85,
-        "pseudo": "sapin",
         "adressePays": "FR",
+        "pseudo": "sapin",
         "prenom": "Jean-Yves",
         "idGene": 2
     }

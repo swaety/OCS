@@ -9,7 +9,7 @@
     "adresseRue": "CHEMIN DES TERRIERS",
     "tel": "04 93 34 61 73",
     "adresseNum": 2,
-    "pseudo": "poste1",
     "adressePays": "FR",
+    "pseudo": "poste1",
     "idGene": 1
 }]}

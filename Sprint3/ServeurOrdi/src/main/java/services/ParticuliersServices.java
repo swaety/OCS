@@ -27,6 +27,7 @@ public class ParticuliersServices {
     @Path("/{login}/{mdp}")
     @Produces(MediaType.APPLICATION_JSON)
     public String getIDParticulier(@PathParam("login") String login,@PathParam("mdp") String mdp) {
+        System.out.println("fesefofesfe");
         return "{\"Ide\": "+MockDatabase.data.getIDParticulier(login,mdp)+"}";
     }
 
