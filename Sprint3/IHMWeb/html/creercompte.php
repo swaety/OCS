@@ -143,8 +143,15 @@ if(isset($_POST['register_particulier']))
 			$lastname = $db -> quote($_POST['nom']);
 			$username = $db -> quote($_POST['pseudo']);
 			$password = $db -> quote($_POST['mdp']);
+			$numero = $db -> quote($_POST['numero']);
+			$rue = $db -> quote($_POST['rue']);
+			$codPost = $db -> quote($_POST['codPost']);
+			$ville = $db -> quote($_POST['ville']);
 			$country = $db -> quote($_POST['country']);
 			$tel = $db -> quote($_POST['tel']);
+			$dateJ = $db -> quote($_POST['dateJ']);
+			$dateM = $db -> quote($_POST['dateM']);
+			$dateA = $db -> quote($_POST['dateA']);
 			$email = $db -> quote($_POST['email']);
 			$category = $db -> quote("PARTICULIER");
 			$checkusername =  $db->select("SELECT * FROM users WHERE username = '".$username."'");
@@ -162,8 +169,58 @@ if(isset($_POST['register_particulier']))
 				$registerquery = $db->query("INSERT INTO `users` (`username`, `password`,`email`,`country`,`firstName`,`lastName`,`tel`,`category`) VALUES(".$username.", ".$password.",".$email.",".$country.",".$firstname.",".$lastname.",".$tel.",".$category.")");
 				if($registerquery)
 				{
+					
+					try {
+						
+						$url_partculier =  'http://localhost:5555/particulier' ;
+						$ch = curl_init($url_partculier);
+						$jsonData = array( 
+								'nom' => $lastname,
+								'prenom' => $firstname,
+								'pseudo' => $username,
+								'dateJour' => $dateJ,
+								'dateMois' => $dateM,
+								'dateAnnee' => $dateA,
+								'mail' => $email,
+								'tel' => $tel,
+								'mdp' => $password,
+								'adresseNum' => $numero,
+								'adresseRue' => $rue,
+								'adresseCP' => $codPost,
+								'adresseVille' => $ville,
+								'adressePays' => $country,
+								   
+						);
+						//Encode the array into JSON.
+						$jsonDataEncoded = json_encode($jsonData);
+						//Tell cURL that we want to send a POST request.
+						curl_setopt($ch, CURLOPT_POST, 1);
+						//Attach our encoded JSON string to the POST fields.
+						curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+						//Set the content type to application/json
+						curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); 
+						//Execute the request
+						$result = curl_exec($ch);
+						$body = json_decode($result);
+						//je sais pas ça sera quoi le retour du serveur : j'assume que ça sera du type {'Ide':'#'}
+						$id_particulier = $body->Ide . PHP_EOL;
+						if (isset($id_particulier))
+						{
+							$registerquery = $db->query("UPDATE `users` SET `IdParticulier` = ".$id_particulier." WHERE `username` = ".$username."  ");
+							if($registerquery){ echo "particulier ID was updated successfully";}
+							else echo "particulier ID was not updated successfully";
+						}
+						else echo "no particulier ID given from server";
+						print '<pre>' . var_export( $body, true ) . '</pre>';
+					} catch ( Exception $e ) {
+						print_r( $e->getMessage() ) . PHP_EOL;
+					}
+					
 					echo "<h1>Success</h1>";
 					echo "<p>Your account was successfully created. Please <a href=\"moncompte.php\">click here to login</a>.</p>";
+					
+
 				}
 				else
 				{
@@ -189,6 +246,8 @@ else if(isset($_POST['register_poste']))
 			$numero = $db -> quote($_POST['numero_poste']);
 			$ville = $db -> quote($_POST['ville_poste']);
 			$email = $db -> quote($_POST['email_poste']);
+			$rue_poste = $db -> quote($_POST['rue_poste']);
+			$codPost_poste = $db -> quote($_POST['codPost_poste']);
 			$category = $db -> quote("POSTE");
 			$checkusername =  $db->select("SELECT * FROM users WHERE username = '".$username."'");
 			echo("from post1");
@@ -202,12 +261,51 @@ else if(isset($_POST['register_poste']))
 				echo("from post2");
 				$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 				$password = $db -> quote($hashed_password) ;
-				
 				$registerquery = $db->query("INSERT INTO `users` (`username`,`category`, `password`,`email`,`country`,`city`,`address_num`,`tel`,`activity_range`) VALUES(".$username.", ".$category.",".$password.",".$email.",".$country.",".$ville.",".$numero.",".$tel.",".$activity_range.")");
 				if($registerquery)
 				{
 					echo "<h1>Success</h1>";
 					echo "<p>Your account was successfully created. Please <a href=\"moncompte.php\">click here to login</a>.</p>";
+					try {
+						$url_poste =  'http://localhost:5555/poste' ;
+						$ch = curl_init($url_poste);
+						$jsonData =	array( 'nom' => $nom_poste,
+								   'pseudo' => $username,
+								   'adresseNum' => $numero,
+								   'adresseRue' => $rue_poste,
+								   'adresseCP' => $codPost_poste,
+								   'adresseVille' => $ville,
+								   'adressePays' => $country,
+								   'mail' => $email,
+								   'tel' => $tel,
+								   'mdp' => $password,
+								   'rayonActivite' => $activity_range
+				             	);
+						
+						//Encode the array into JSON.
+						$jsonDataEncoded = json_encode($jsonData);
+						//Tell cURL that we want to send a POST request.
+						curl_setopt($ch, CURLOPT_POST, 1);
+						//Attach our encoded JSON string to the POST fields.
+						curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+						//Set the content type to application/json
+						curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); 
+						//Execute the request
+						$result = curl_exec($ch);
+						$body = json_decode( $result );
+						$id_poste = $body->Ide . PHP_EOL;
+						if (isset($id_particulier))
+						{
+							$registerquery = $db->query("UPDATE `users` SET `IdPoste` = ".$id_poste." WHERE `username` = ".$username."  ");
+							if($registerquery){ echo "poste ID was updated successfully";}
+							else echo "poste ID was not updated successfully";
+						}
+						else echo "no post ID given from server";
+						print '<pre>' . var_export( $body, true ) . '</pre>';
+					} catch ( Exception $e ) {
+						print_r( $e->getMessage() ) . PHP_EOL;
+					}
 				}
 				else
 				{
