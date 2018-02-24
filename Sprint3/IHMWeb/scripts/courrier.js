@@ -1,5 +1,7 @@
 var client = new XMLHttpRequest();
-var idParticulier = 0;
+//change it to idPost if it's a Post Page
+var idParticulier = "<?php echo $_SESSION['idParticulier'];?>";
+
 client.open("GET",'http://192.168.0.14:5555/particulier/'+idParticulier+'/boites', false);
 client.send(null);
 var currentList = JSON.parse(client.response);
