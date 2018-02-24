@@ -100,7 +100,10 @@ session_start();
 		}
 				
 		else if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'POSTE')
-		 { ?>
+		{ $id_poste = $_SESSION['idPoste'] ; ?>
+		<script type="text/javascript">
+		var idPoste = "<?php echo $id_poste ?>";
+		</script>
 			<div class="topnav" id="myTopnav">
 			<a href="../html/index.php"><img class="home" src="../styles/images/home.png"></img></a>
 			<a href="../html/contact.php">Contacts</a>
