@@ -1,5 +1,6 @@
 var client = new XMLHttpRequest();
-var idParticulier = 0;
+//change it to idPost if it's a Post Page
+var idParticulier = "<?php echo $_SESSION['idParticulier'];?>";
 var IPCloud = "http://192.168.0.14:5555/"
 client.open("GET",IPCloud+'particulier/'+idParticulier+'/boites/', false);
 client.send(null);
