@@ -158,19 +158,25 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 			{
 				if(password_verify($password, $checklogin[0]['password'])) 
 				{
-					echo $username;
-					echo $password;
-					echo '<script type="text/javascript">jsfunction($username,$password);</script>';
-;
-				//ici faire la requete
+				
 				$email = $checklogin[0]['email'];
 				$category = $checklogin[0]['category'];
 				$_SESSION['username'] = $username;
 				$_SESSION['email'] = $email;
 				$_SESSION['category'] = $category;
 				$_SESSION['LoggedIn'] = true;
-				
-			
+				if ($category=='PARTICULIER')
+				{
+					$idParticulier = $checklogin[0]['IdParticulier'];
+					$_SESSION['idParticulier'] = $idParticulier;
+					
+
+				}
+				if ($category=='POSTE')
+				{
+					$idPoste = $checklogin[0]['IdPoste'];
+					$_SESSION['idPoste'] = $idPoste;
+				}
 				echo "<h1>Success</h1>";
 				echo "<p>We are now redirecting you to the member area.</p>";
 				echo '<META http-equiv="refresh" content="3; URL=index.php">';
