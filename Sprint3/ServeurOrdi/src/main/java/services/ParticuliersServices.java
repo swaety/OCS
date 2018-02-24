@@ -18,16 +18,16 @@ public class ParticuliersServices {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public long addParticulier(Particulier particulier) {
+    public String addParticulier(Particulier particulier) {
         MockDatabase.data.addParticulier(particulier);
-        return particulier.getIde();
+        return "{\"Ide\": "+particulier.getIde()+"}";
     }
 
     @GET
     @Path("/{login}/{mdp}")
     @Produces(MediaType.APPLICATION_JSON)
-    public long getIDParticulier(@PathParam("login") String login,@PathParam("mdp") String mdp) {
-        return MockDatabase.data.getIDParticulier(login,mdp);
+    public String getIDParticulier(@PathParam("login") String login,@PathParam("mdp") String mdp) {
+        return "{\"Ide\": "+MockDatabase.data.getIDParticulier(login,mdp)+"}";
     }
 
     @GET

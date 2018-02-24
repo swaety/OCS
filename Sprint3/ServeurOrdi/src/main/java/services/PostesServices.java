@@ -18,16 +18,16 @@ public class PostesServices {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public long addPoste(Poste poste) {
+    public String addPoste(Poste poste) {
         MockDatabase.data.addPoste(poste);
-        return poste.getIde();
+        return "{\"Ide\": "+poste.getIde()+"}";
     }
 
     @GET
     @Path("/{login}/{mdp}")
     @Produces(MediaType.APPLICATION_JSON)
-    public long getIDPoste(@PathParam("login") String login,@PathParam("mdp") String mdp) {
-        return MockDatabase.data.getIDPoste(login,mdp);
+    public String getIDPoste(@PathParam("login") String login,@PathParam("mdp") String mdp) {
+        return "{\"Ide\": "+MockDatabase.data.getIDPoste(login,mdp)+"}";
     }
 
     @GET
