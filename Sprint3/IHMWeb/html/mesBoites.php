@@ -120,8 +120,12 @@ session_start();
 		    </div>
 		<?php } ?>	
 <?php	if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'PARTICULIER') {
-
+			 $id_particulier = $_SESSION['idParticulier'] ;
+			 
 ?>
+		<script type="text/javascript">
+		var idParticulier = "<?php echo $id_particulier ?>";
+		</script>
 		<div class="mainPagePC">
 			<br>
 			<div id="buttons">
@@ -153,6 +157,7 @@ session_start();
 			</div>
 		</div>
 	  </div>  
+	  <div id="debug"></div>
 	  <?php
 			}
 		 ?>
