@@ -169,13 +169,14 @@ if ($iphone || $android || $palmpre || $ipod || $berry == true)
 				{
 					$idParticulier = $checklogin[0]['IdParticulier'];
 					$_SESSION['idParticulier'] = $idParticulier;
-					
+					//echo $_SESSION['idParticulier'] ;
 
 				}
 				if ($category=='POSTE')
 				{
 					$idPoste = $checklogin[0]['IdPoste'];
 					$_SESSION['idPoste'] = $idPoste;
+					//echo $_SESSION['idPoste'] ;
 				}
 				echo "<h1>Success</h1>";
 				echo "<p>We are now redirecting you to the member area.</p>";
