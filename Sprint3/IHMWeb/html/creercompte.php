@@ -152,7 +152,6 @@ if(isset($_POST['register_particulier']))
 			$dateM = $db -> quote($_POST['dateM']);
 			$dateA = $db -> quote($_POST['dateA']);
 			$email = $db -> quote($_POST['email']);
-
 			$firstname_ = $_POST['prenom'];
 			$lastname_ = $_POST['nom'];
 			$username_ = $_POST['pseudo'];
@@ -263,7 +262,6 @@ else if(isset($_POST['register_poste']))
 			$email = $db -> quote($_POST['email_poste']);
 			$rue_poste = $db -> quote($_POST['rue_poste']);
 			$codPost_poste = $db -> quote($_POST['codPost_poste']);
-
 			$activity_range_ = $_POST['activityRange_poste'];
 			$nom_poste_ = $_POST['nom_poste'];
 			$username_ = $_POST['pseudo_poste'];
