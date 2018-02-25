@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>SMARTIL</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+	<ion-item>
+	    <ion-label color="primary" floating>Pseudo</ion-label>
+	    <ion-input [(ngModel)]="login"></ion-input>
+  	</ion-item>
+  	<ion-item>
+	    <ion-label color="primary" floating>Mot de passe</ion-label>
+	    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  	</ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>adresse ip du serveur (alpha)</ion-label>
+      <ion-input [(ngModel)]="server"></ion-input>
+    </ion-item>
+  <button ion-button full (click)="doLogin()">Login</button>
+</ion-content>

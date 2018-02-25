@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+  	<ion-buttons start>
+  		<button ion-button menuToggle>
+  		<ion-icon name="menu"></ion-icon>
+  	</button>
+  	</ion-buttons>
+    <ion-title>Ajouter une boite</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+		<ion-item>
+			<ion-label color="primary" floating>Nom pour votre boite</ion-label>
+			<ion-input [(ngModel)]="nomb"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label color="primary" floating>Numero rue</ion-label>
+			<ion-input [(ngModel)]="numrue"></ion-input>
+		</ion-item>
+		<ion-item>
+		  	<ion-label color="primary" floating>Rue</ion-label>
+			<ion-input [(ngModel)]="nomrue"></ion-input>
+	  	</ion-item>
+	  	<ion-item>
+		  	<ion-label color="primary" floating>Code Postal</ion-label>
+			<ion-input [(ngModel)]="cp"></ion-input>
+		</ion-item>
+		<ion-item>
+		  	<ion-label color="primary" floating>Ville</ion-label>
+			<ion-input [(ngModel)]="ville"></ion-input>
+	  	</ion-item>
+	  	<ion-item>
+		  	<ion-label color="primary" floating>Pays</ion-label>
+			<ion-input [(ngModel)]="pays"></ion-input>
+		</ion-item>
+		<ion-item>
+		  	<ion-label color="primary" floating>UUID</ion-label>
+			<ion-input [(ngModel)]="uuid"></ion-input>
+		</ion-item>
+	  	<button ion-button full >Scanner le QRCode</button>
+	  	<button ion-button full (click)="addBal()">Ajouter la boite</button>
+</ion-content>

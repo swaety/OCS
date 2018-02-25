@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+  	<ion-buttons start>
+  		<button ion-button menuToggle>
+  		<ion-icon name="menu"></ion-icon>
+  	</button>
+  	</ion-buttons>
+    <ion-title>Mes Boites</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+    <ion-item *ngFor="let i of balList">
+    	<button ion-button full color="light" (click)="test(i.uuid)">{{i.nom}}</button>
+    </ion-item>
+</ion-list>
+</ion-content>
