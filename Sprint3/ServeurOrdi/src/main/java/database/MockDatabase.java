@@ -253,6 +253,9 @@ public class MockDatabase {
             if(p.getPseudo().compareTo(login)==0 && p.getMdp().compareTo(mdp)==0){
                 return p.getIde();
             }
+            else{
+                return -1;
+            }
         }
         return Long.parseLong(null);
     }
