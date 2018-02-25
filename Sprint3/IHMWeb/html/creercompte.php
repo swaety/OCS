@@ -156,7 +156,7 @@ if(isset($_POST['register_particulier']))
 			$firstname_ = $_POST['prenom'];
 			$lastname_ = $_POST['nom'];
 			$username_ = $_POST['pseudo'];
-			
+			$password_ = $_POST['mdp'];
 			$numero_ =  $_POST['numero'];
 			$rue_ = $_POST['rue'];
 			$codPost_ = $_POST['codPost'];
@@ -167,7 +167,7 @@ if(isset($_POST['register_particulier']))
 			$dateM_ = $_POST['dateM'];
 			$dateA_ = $_POST['dateA'];
 			$email_ = $_POST['email'];
-			 
+			
 
 			$category = $db -> quote("PARTICULIER");
 			$checkusername =  $db->select("SELECT * FROM users WHERE username = '".$username."'");
@@ -180,7 +180,7 @@ if(isset($_POST['register_particulier']))
 			else
 			{
 				$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-				$password_ = $hashed_password;
+				
 				$password = $db -> quote($hashed_password) ;
 				
 				$registerquery = $db->query("INSERT INTO `users` (`username`, `password`,`email`,`country`,`firstName`,`lastName`,`tel`,`category`) VALUES(".$username.", ".$password.",".$email.",".$country.",".$firstname.",".$lastname.",".$tel.",".$category.")");
@@ -267,7 +267,7 @@ else if(isset($_POST['register_poste']))
 			$activity_range_ = $_POST['activityRange_poste'];
 			$nom_poste_ = $_POST['nom_poste'];
 			$username_ = $_POST['pseudo_poste'];
-			
+			$password_ = $_POST['mdp_poste'];
 			$country_ = $_POST['country_poste'];
 			$tel_ = $_POST['tel_poste'];
 			$numero_ = $_POST['numero_poste'];
@@ -287,7 +287,7 @@ else if(isset($_POST['register_poste']))
 			else
 			{
 				$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-				$password_ = $hashed_password;
+				
 				$password = $db -> quote($hashed_password) ;
 				$registerquery = $db->query("INSERT INTO `users` (`username`,`category`, `password`,`email`,`country`,`city`,`address_num`,`tel`,`activity_range`) VALUES(".$username.", ".$category.",".$password.",".$email.",".$country.",".$ville.",".$numero.",".$tel.",".$activity_range.")");
 				if($registerquery)
