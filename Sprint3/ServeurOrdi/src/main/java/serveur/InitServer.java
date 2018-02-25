@@ -25,10 +25,10 @@ public class InitServer {
 
     public void initialisation() {
 
-        Particulier particulier0 = new Particulier("Lavirotte","Stéphane","stef", 12,
-                3, 1970, "stephane@lavirotte.com", "0600000000", "sea3017",
+        Particulier particulier0 = new Particulier("Boudab","Jonathan","shaeny", 9,
+                10, 1994, "test@test.com", "0600000000", "azerty123",
                 329, "chemin du valbosquet", "06600",
-                "Cannes", "FR");
+                "Antibes", "FR");
         MockDatabase.data.addParticulier(particulier0);
         Particulier particulier1 = new Particulier("Tigli","Jean-Yves","sapin", 30,
                 2, 1965, "jean-yves.tigli@unice.fr", "0600020000", "pfe2017",
