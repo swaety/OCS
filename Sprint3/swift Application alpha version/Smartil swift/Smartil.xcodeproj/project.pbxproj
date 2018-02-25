@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB611E6E203F68960033BA14 /* MesBaLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611E6D203F68960033BA14 /* MesBaLViewController.swift */; };
+		AB611E70203F69430033BA14 /* AddBaLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611E6F203F69430033BA14 /* AddBaLViewController.swift */; };
+		AB611E74203F6F0F0033BA14 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611E73203F6F0F0033BA14 /* TabBarViewController.swift */; };
+		AB7D314B203EEBA80053BA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D314A203EEBA80053BA43 /* AppDelegate.swift */; };
+		AB7D314D203EEBA80053BA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D314C203EEBA80053BA43 /* ViewController.swift */; };
+		AB7D3150203EEBA80053BA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D314E203EEBA80053BA43 /* Main.storyboard */; };
+		AB7D3152203EEBA80053BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7D3151203EEBA80053BA43 /* Assets.xcassets */; };
+		AB7D3155203EEBA80053BA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D3153203EEBA80053BA43 /* LaunchScreen.storyboard */; };
+		AB7D3160203EEBA90053BA43 /* SmartilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D315F203EEBA90053BA43 /* SmartilTests.swift */; };
+		AB7D316B203EEBA90053BA43 /* SmartilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D316A203EEBA90053BA43 /* SmartilUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB7D315C203EEBA90053BA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7D313F203EEBA80053BA43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7D3146203EEBA80053BA43;
+			remoteInfo = Smartil;
+		};
+		AB7D3167203EEBA90053BA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7D313F203EEBA80053BA43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7D3146203EEBA80053BA43;
+			remoteInfo = Smartil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB611E6D203F68960033BA14 /* MesBaLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesBaLViewController.swift; sourceTree = "<group>"; };
+		AB611E6F203F69430033BA14 /* AddBaLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBaLViewController.swift; sourceTree = "<group>"; };
+		AB611E73203F6F0F0033BA14 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AB7D3147203EEBA80053BA43 /* Smartil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7D314A203EEBA80053BA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB7D314C203EEBA80053BA43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB7D314F203EEBA80053BA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB7D3151203EEBA80053BA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB7D3154203EEBA80053BA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB7D3156203EEBA80053BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7D315B203EEBA90053BA43 /* SmartilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7D315F203EEBA90053BA43 /* SmartilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartilTests.swift; sourceTree = "<group>"; };
+		AB7D3161203EEBA90053BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7D3166203EEBA90053BA43 /* SmartilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7D316A203EEBA90053BA43 /* SmartilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartilUITests.swift; sourceTree = "<group>"; };
+		AB7D316C203EEBA90053BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB7D3144203EEBA80053BA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3158203EEBA90053BA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3163203EEBA90053BA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7D313E203EEBA80053BA43 = {
+			isa = PBXGroup;
+			children = (
+				AB7D3149203EEBA80053BA43 /* Smartil */,
+				AB7D315E203EEBA90053BA43 /* SmartilTests */,
+				AB7D3169203EEBA90053BA43 /* SmartilUITests */,
+				AB7D3148203EEBA80053BA43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7D3148203EEBA80053BA43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7D3147203EEBA80053BA43 /* Smartil.app */,
+				AB7D315B203EEBA90053BA43 /* SmartilTests.xctest */,
+				AB7D3166203EEBA90053BA43 /* SmartilUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7D3149203EEBA80053BA43 /* Smartil */ = {
+			isa = PBXGroup;
+			children = (
+				AB7D314A203EEBA80053BA43 /* AppDelegate.swift */,
+				AB7D314C203EEBA80053BA43 /* ViewController.swift */,
+				AB7D314E203EEBA80053BA43 /* Main.storyboard */,
+				AB7D3151203EEBA80053BA43 /* Assets.xcassets */,
+				AB7D3153203EEBA80053BA43 /* LaunchScreen.storyboard */,
+				AB7D3156203EEBA80053BA43 /* Info.plist */,
+				AB611E6D203F68960033BA14 /* MesBaLViewController.swift */,
+				AB611E6F203F69430033BA14 /* AddBaLViewController.swift */,
+				AB611E73203F6F0F0033BA14 /* TabBarViewController.swift */,
+			);
+			path = Smartil;
+			sourceTree = "<group>";
+		};
+		AB7D315E203EEBA90053BA43 /* SmartilTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7D315F203EEBA90053BA43 /* SmartilTests.swift */,
+				AB7D3161203EEBA90053BA43 /* Info.plist */,
+			);
+			path = SmartilTests;
+			sourceTree = "<group>";
+		};
+		AB7D3169203EEBA90053BA43 /* SmartilUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7D316A203EEBA90053BA43 /* SmartilUITests.swift */,
+				AB7D316C203EEBA90053BA43 /* Info.plist */,
+			);
+			path = SmartilUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB7D3146203EEBA80053BA43 /* Smartil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7D316F203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "Smartil" */;
+			buildPhases = (
+				AB7D3143203EEBA80053BA43 /* Sources */,
+				AB7D3144203EEBA80053BA43 /* Frameworks */,
+				AB7D3145203EEBA80053BA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smartil;
+			productName = Smartil;
+			productReference = AB7D3147203EEBA80053BA43 /* Smartil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB7D315A203EEBA90053BA43 /* SmartilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7D3172203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "SmartilTests" */;
+			buildPhases = (
+				AB7D3157203EEBA90053BA43 /* Sources */,
+				AB7D3158203EEBA90053BA43 /* Frameworks */,
+				AB7D3159203EEBA90053BA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7D315D203EEBA90053BA43 /* PBXTargetDependency */,
+			);
+			name = SmartilTests;
+			productName = SmartilTests;
+			productReference = AB7D315B203EEBA90053BA43 /* SmartilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB7D3165203EEBA90053BA43 /* SmartilUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7D3175203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "SmartilUITests" */;
+			buildPhases = (
+				AB7D3162203EEBA90053BA43 /* Sources */,
+				AB7D3163203EEBA90053BA43 /* Frameworks */,
+				AB7D3164203EEBA90053BA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7D3168203EEBA90053BA43 /* PBXTargetDependency */,
+			);
+			name = SmartilUITests;
+			productName = SmartilUITests;
+			productReference = AB7D3166203EEBA90053BA43 /* SmartilUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7D313F203EEBA80053BA43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jonathan;
+				TargetAttributes = {
+					AB7D3146203EEBA80053BA43 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AB7D315A203EEBA90053BA43 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB7D3146203EEBA80053BA43;
+					};
+					AB7D3165203EEBA90053BA43 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB7D3146203EEBA80053BA43;
+					};
+				};
+			};
+			buildConfigurationList = AB7D3142203EEBA80053BA43 /* Build configuration list for PBXProject "Smartil" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB7D313E203EEBA80053BA43;
+			productRefGroup = AB7D3148203EEBA80053BA43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7D3146203EEBA80053BA43 /* Smartil */,
+				AB7D315A203EEBA90053BA43 /* SmartilTests */,
+				AB7D3165203EEBA90053BA43 /* SmartilUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB7D3145203EEBA80053BA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7D3155203EEBA80053BA43 /* LaunchScreen.storyboard in Resources */,
+				AB7D3152203EEBA80053BA43 /* Assets.xcassets in Resources */,
+				AB7D3150203EEBA80053BA43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3159203EEBA90053BA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3164203EEBA90053BA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB7D3143203EEBA80053BA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB611E70203F69430033BA14 /* AddBaLViewController.swift in Sources */,
+				AB7D314D203EEBA80053BA43 /* ViewController.swift in Sources */,
+				AB7D314B203EEBA80053BA43 /* AppDelegate.swift in Sources */,
+				AB611E74203F6F0F0033BA14 /* TabBarViewController.swift in Sources */,
+				AB611E6E203F68960033BA14 /* MesBaLViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3157203EEBA90053BA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7D3160203EEBA90053BA43 /* SmartilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D3162203EEBA90053BA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7D316B203EEBA90053BA43 /* SmartilUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB7D315D203EEBA90053BA43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7D3146203EEBA80053BA43 /* Smartil */;
+			targetProxy = AB7D315C203EEBA90053BA43 /* PBXContainerItemProxy */;
+		};
+		AB7D3168203EEBA90053BA43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7D3146203EEBA80053BA43 /* Smartil */;
+			targetProxy = AB7D3167203EEBA90053BA43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB7D314E203EEBA80053BA43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7D314F203EEBA80053BA43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB7D3153203EEBA80053BA43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7D3154203EEBA80053BA43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB7D316D203EEBA90053BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB7D316E203EEBA90053BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB7D3170203EEBA90053BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REW924GS;
+				INFOPLIST_FILE = Smartil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.Smartil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB7D3171203EEBA90053BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REW924GS;
+				INFOPLIST_FILE = Smartil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.Smartil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB7D3173203EEBA90053BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.SmartilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartil.app/Smartil";
+			};
+			name = Debug;
+		};
+		AB7D3174203EEBA90053BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.SmartilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartil.app/Smartil";
+			};
+			name = Release;
+		};
+		AB7D3176203EEBA90053BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.SmartilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smartil;
+			};
+			name = Debug;
+		};
+		AB7D3177203EEBA90053BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShuriGhost.SmartilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smartil;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB7D3142203EEBA80053BA43 /* Build configuration list for PBXProject "Smartil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7D316D203EEBA90053BA43 /* Debug */,
+				AB7D316E203EEBA90053BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7D316F203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "Smartil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7D3170203EEBA90053BA43 /* Debug */,
+				AB7D3171203EEBA90053BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7D3172203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "SmartilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7D3173203EEBA90053BA43 /* Debug */,
+				AB7D3174203EEBA90053BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7D3175203EEBA90053BA43 /* Build configuration list for PBXNativeTarget "SmartilUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7D3176203EEBA90053BA43 /* Debug */,
+				AB7D3177203EEBA90053BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7D313F203EEBA80053BA43 /* Project object */;
+}
