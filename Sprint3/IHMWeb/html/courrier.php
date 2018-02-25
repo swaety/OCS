@@ -119,7 +119,14 @@ session_start();
 			<a id="logs" href="../html/moncompte.php">Mon compte</a>
 		    </div>
 		<?php } ?>	
+		<?php	if (isset($_SESSION['LoggedIn']) && ($_SESSION['LoggedIn'] == true) && $_SESSION['category'] == 'PARTICULIER') {
+			 $id_particulier = $_SESSION['idParticulier'] ;
+			 
+		?>
 
+		<script type="text/javascript">
+		var idParticulier = "<?php echo $id_particulier ?>";
+		</script>
 		<div class="mainPagePC">
 			<div id="descriptliste">
 			<br>
@@ -146,8 +153,10 @@ session_start();
 			</div>
 		</div>
 	  </div>  
+	  
+	  	  <?php
+			}
+		 ?>
 	  <script type="text/javascript" src="../scripts/courrier.js" ></script>
   </body>
 </html>
-
-

@@ -1,6 +1,6 @@
 var client = new XMLHttpRequest();
 //change it to idPost if it's a Post Page
-document.getElementById("debug").innerHTML = "ID particulier is :"+idParticulier;
+//document.getElementById("debug").innerHTML = "ID particulier is :"+idParticulier;
 var IPCloud = "http://localhost:5555/"
 client.open("GET",IPCloud+'particulier/'+idParticulier+'/boites/', false);
 client.send(null);
@@ -42,13 +42,7 @@ function clicRemove(uuidb){
 		printList1 += '<tr><td style="text-align:center;">' +currentList[i].uuid + '</td><td style="text-align:center;">' + currentList[i].adresseNum +' '+currentList[i].adresseRue +' '+currentList[i].adresseCP+' ' +currentList[i].adresseVille +'</td><td style="text-align:center;">' + '<div onclick="clicGerer('+i+')" style="border:1px solid black; cursor: pointer;"><div style="text-align:center;text-decoration:none; "><p>' +'Gerer' + '</p></div></div>'  +'</td></tr>';	
 	}
 	printList1 += "</tbody></table>";
-	
-	printArt1='<table border="1" style="width:100%;"><thead><tr><th><p style="text-align:center;">Num</p></th><th><p style="text-align:center;">Rue</p></th><th><p style="text-align:center;">Code Postale</p></th><th><p style="text-align:center;">Ville</p></th><th><p style="text-align:center;">Supprimer</p></th></tr></thead><tbody>';
-	document.getElementById("retour").style.visibility = 'visible';
-	for(let i = 0; i < currentList.length ; i++){
-		printArt1 += '<tr><td style="text-align:center;">'+ currentList[i].adresseNum + '</td><td style="text-align:center;">'+currentList[i].adresseRue +'</td><td style="text-align:center;">'+ currentList[i].adresseCP+'</td><td style="text-align:center;">'+currentList[i].adresseVille +'</td><td style="text-align:center;">' + '<div onclick="clicRemove('+i+')" style="border:1px solid black; cursor: pointer;"><div style="text-align:center;text-decoration:none; "><p>' +'Suppr' + '</p></div></div>'  +'</td></tr>';	
-	}
-	document.getElementById("data").innerHTML = printArt1;
+	document.getElementById("data").innerHTML = printList1;
 }
 
 function addboite() {
@@ -60,7 +54,7 @@ function addboite() {
 	var adressPays = prompt("adresse(pays):", "");
 	var uuid = prompt("uuid de votre smartil:", "");
 	var xhr = new XMLHttpRequest();
-	xhr.open("POST", IPCloud+'particulier/0/'+nom+'/'+adressNum+'/'+adressRue+'/'+adressCP+'/'+adressVille+'/'+adressPays+'/'+uuid+'/', true);
+	xhr.open("POST", IPCloud+'particulier/'+idParticulier+'/'+nom+'/'+adressNum+'/'+adressRue+'/'+adressCP+'/'+adressVille+'/'+adressPays+'/'+uuid+'/', true);
 	xhr.send(null);
 	client.open("GET",IPCloud+'particulier/'+idParticulier+'/boites/', false);
 	client.send(null);
@@ -73,10 +67,6 @@ function addboite() {
 	}
 	printList1 += "</tbody></table>";
 	
-	printArt1='<table border="1" style="width:100%;"><thead><tr><th><p style="text-align:center;">Num</p></th><th><p style="text-align:center;">Rue</p></th><th><p style="text-align:center;">Code Postale</p></th><th><p style="text-align:center;">Ville</p></th><th><p style="text-align:center;">Supprimer</p></th></tr></thead><tbody>';
-	document.getElementById("retour").style.visibility = 'visible';
-	for(let i = 0; i < currentList.length ; i++){
-		printArt1 += '<tr><td style="text-align:center;">'+ currentList[i].adresseNum + '</td><td style="text-align:center;">'+currentList[i].adresseRue +'</td><td style="text-align:center;">'+ currentList[i].adresseCP+'</td><td style="text-align:center;">'+currentList[i].adresseVille +'</td><td style="text-align:center;">' + '<div onclick="clicRemove('+i+')" style="border:1px solid black; cursor: pointer;"><div style="text-align:center;text-decoration:none; "><p>' +'Suppr' + '</p></div></div>'  +'</td></tr>';	
-	}
-	document.getElementById("data").innerHTML = printArt1;
+
+	document.getElementById("data").innerHTML = printList1;
 }

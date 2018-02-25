@@ -1,5 +1,5 @@
 var client = new XMLHttpRequest();
-client.open("GET",'http://192.168.0.14:5555/particulier', false);
+client.open("GET",'http://localhost:5555/particulier', false);
 client.send(null);
 var currentList = JSON.parse(client.response);
 

@@ -2,7 +2,6 @@
 include "db.php";
 session_start();
 if (isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == true) {
-	//echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
 	header("Location: index.php");
 } else {
   
@@ -210,7 +209,7 @@ if(isset($_POST['register_particulier']))
 						
 						//Encode the array into JSON.
 						$jsonDataEncoded = json_encode($jsonData);
-						var_dump($jsonDataEncoded);
+						//var_dump($jsonDataEncoded);
 						//Tell cURL that we want to send a POST request.
 						curl_setopt($ch, CURLOPT_POST, 1);
 						//Attach our encoded JSON string to the POST fields.
@@ -221,19 +220,15 @@ if(isset($_POST['register_particulier']))
 						//Execute the request
 						$result = curl_exec($ch);
 						$body = json_decode($result);
-						var_dump($body);
-						//je sais pas ça sera quoi le retour du serveur : j'assume que ça sera du type {'Ide':'#'}
+						//var_dump($body);
 						
 						$id_particulier = $body->Ide . PHP_EOL;
 						
 						if (isset($id_particulier))
 						{
 							$registerquery = $db->query("UPDATE `users` SET `IdParticulier` = ".$id_particulier." WHERE `username` = ".$username."  ");
-							if($registerquery){ echo "particulier ID was updated successfully";}
-							else echo "particulier ID was not updated successfully";
 						}
 						else echo "no particulier ID given from server";
-						//print '<pre>' . var_export( $body, true ) . '</pre>';
 					} catch ( Exception $e ) {
 						print_r( $e->getMessage() ) . PHP_EOL;
 					}
@@ -253,7 +248,6 @@ if(isset($_POST['register_particulier']))
 }
 else if(isset($_POST['register_poste']))
 {
-	echo("from post0");
 	{
 		if(!empty($_POST['pseudo_poste']) && !empty($_POST['nom_poste']) && !empty($_POST['mdp_poste']) && !empty($_POST['email_poste']) &&!empty($_POST['activityRange_poste']) &&!empty($_POST['ville_poste'])&&!empty($_POST['country_poste'])&&!empty($_POST['numero_poste']))
 
@@ -284,7 +278,7 @@ else if(isset($_POST['register_poste']))
 
 			$category = $db -> quote("POSTE");
 			$checkusername =  $db->select("SELECT * FROM users WHERE username = '".$username."'");
-			//echo("from post1");
+
 			if($checkusername != false)
 			{
 				echo "<h1>Error</h1>";
@@ -292,7 +286,6 @@ else if(isset($_POST['register_poste']))
 			}
 			else
 			{
-				//echo("from post2");
 				$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 				$password_ = $hashed_password;
 				$password = $db -> quote($hashed_password) ;
@@ -333,13 +326,10 @@ else if(isset($_POST['register_poste']))
 						if (isset($id_poste))
 						{
 							$registerquery = $db->query("UPDATE `users` SET `IdPoste` = ".$id_poste." WHERE `username` = ".$username."  ");
-							if($registerquery){ echo "poste ID was updated successfully";}
-							else echo "poste ID was not updated successfully";
 						}
 						else echo "no post ID given from server";
-						//print '<pre>' . var_export( $body, true ) . '</pre>';
 					} catch ( Exception $e ) {
-						print_r( $e->getMessage() ) . PHP_EOL;
+						//print_r( $e->getMessage() ) . PHP_EOL;
 					}
 				}
 				else

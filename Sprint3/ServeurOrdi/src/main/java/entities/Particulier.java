@@ -31,7 +31,10 @@ public class Particulier {
     private long ide;
     private ArrayList<Boite> listBoite;
 
-    public Particulier() { ide = idGene++; }
+    public Particulier() {
+        ide = idGene++;
+        listBoite = new ArrayList<Boite>();
+    }
 
     public Particulier(String nom, String prenom, String pseudo, int dateJour, int dateMois,
                        int dateAnnee, String mail, String tel, String mdp, int adresseNum,
