@@ -26,13 +26,13 @@ public class InitServer {
     public void initialisation() {
 
         Particulier particulier0 = new Particulier("Boudab","Jonathan","shaeny", 9,
-                10, 1994, "test@test.com", "0600000000", "azerty123",
+                10, 1994, "test@test.com", "0600000000", "root",
                 329, "chemin du valbosquet", "06600",
                 "Antibes", "FR");
         MockDatabase.data.addParticulier(particulier0);
-        Particulier particulier1 = new Particulier("Tigli","Jean-Yves","sapin", 30,
-                2, 1965, "jean-yves.tigli@unice.fr", "0600020000", "pfe2017",
-                85, "rue Henri Poincarre", "06460",
+        Particulier particulier1 = new Particulier("Chalte","Thomas","Thompouce1", 8,
+                8, 1992, "chalte.thomas57@unice.fr", "0600020000", "root",
+                85, "rue Henri Poincarre", "06410",
                 "Biot", "FR");
         MockDatabase.data.addParticulier(particulier1);
         ArrayList<Particulier> listParticulier = new ArrayList<Particulier>();
@@ -52,7 +52,7 @@ public class InitServer {
 
         Poste poste0 = new Poste("Poste Principale","poste1", 2, "CHEMIN DES TERRIERS", "06600",
                 "Antibes", "FR", "laposte@laposte.com", "04 93 34 61 73",
-                "lesbolosses", 10);
+                "root", 10);
         MockDatabase.data.addPoste(poste0);
 
         ArrayList<Poste> listPoste = new ArrayList<Poste>();

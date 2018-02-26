@@ -6,7 +6,7 @@
     "adresseCP": "06600",
     "adresseVille": "Antibes",
     "adresseRue": "CHEMIN DES TERRIERS",
-    "mdp": "lesbolosses",
+    "mdp": "root",
     "tel": "04 93 34 61 73",
     "adresseNum": 2,
     "adressePays": "FR",
