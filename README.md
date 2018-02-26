@@ -130,5 +130,3 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 
 [Devis](/Devis_projet/readme.md)
 
-lora
-
