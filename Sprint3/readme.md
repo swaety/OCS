@@ -18,7 +18,7 @@ Actuellement il n’y a pas encore d’application destinée pour la poste et no
 
 ![image alt text](/images/mesboites.PNG)
 
-![image alt text](/images/ajouterboite.png)
+![image alt text](/images/ajouterboite.PNG)
 
 ## Interface Web
 
