@@ -122,6 +122,10 @@ Enfin pour un futur toujours plus propre, nous pourrions proposer comme option s
 
 [Avancée du travail](/Sprint2/readme.md)
 
+### **Sprint 3**
+
+[Présentation finale](/Sprint3/readme.md)
+
 ## **Devis et Démarchage des entreprises pour la création**
 
 [Devis](/Devis_projet/readme.md)
