@@ -24,8 +24,8 @@
         "tel": "0600000000",
         "adresseNum": 329,
         "adressePays": "FR",
-        "pseudo": "shaeny",
         "prenom": "Jonathan",
+        "pseudo": "shaeny",
         "idGene": 2
     },
     {
@@ -53,8 +53,8 @@
         "tel": "0600020000",
         "adresseNum": 85,
         "adressePays": "FR",
-        "pseudo": "Thompouce1",
         "prenom": "Thomas",
+        "pseudo": "Thompouce1",
         "idGene": 2
     }
 ]}

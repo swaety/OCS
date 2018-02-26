@@ -26,6 +26,7 @@ public class BoitesServices {
     public String addBoitep(Boite boite) {
         MockDatabase.data.addBoite(boite);
         return "{\"Reception\":\"OK\"}";
+
     }
 
     @GET
