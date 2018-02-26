@@ -16,6 +16,10 @@ Dans le même cadre que précédemment, la nécessité d’une application pour 
 
 Actuellement il n’y a pas encore d’application destinée pour la poste et nous ne comptant pas en faire. Nous mettons simplement à disposition nos services pour la poste puisse y avoir accès depuis leur terminaux.
 
+![image alt text](/images/mesboites.PNG)
+
+![image alt text](/images/ajouterboite.png)
+
 ## Interface Web
 
 Pour toucher le plus de personnes possible, nous avons mis en place notre site web afin d'interagir avec notre produit. Dans cette IHM il y a deux côtés: le premier étant pour les particulier, c’est à dire les personnes qui seront clientes de nos services et donc de notre boite aux lettres. Le deuxième côté est celui destiné à la poste. Avec cette interface, elle pourra voir toutes les données des boîtes aux lettres de ses clients dans son rayon d’action. Ainsi, il y aura une meilleure gestion des relevés de lettres ou de colis chez les particuliers et la poste pourra de la même manière optimiser la tournée de ses facteurs en fonction du temps passé pour la dépose du courrier.
