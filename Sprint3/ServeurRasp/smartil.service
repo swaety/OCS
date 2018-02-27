@@ -1,0 +1,6 @@
+[Unit]
+Description=Smartil service
+Requires=network.target
+
+[Service]
+ExecStart=/home/Smartil/smartil.py
